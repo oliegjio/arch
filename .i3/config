@@ -32,6 +32,15 @@ set $left h
 set $right l
 set $mod Mod4
 
+
+
+
+# Set all windows to ALWAYS Float
+# for_window [class="[.]*"] floating enable
+
+
+
+
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
