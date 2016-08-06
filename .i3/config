@@ -22,7 +22,7 @@ font pango:monospace 8
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
+# font, it doesnât scale on retina/hidpi displays.
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -32,14 +32,14 @@ set $left h
 set $right l
 set $mod Mod4
 
-
-
+# Hide border adjacent to screen edges
+hide_edge_borders both
 
 # Set all windows to ALWAYS Float
 # for_window [class="[.]*"] floating enable
-
-
-
+#
+# Viewnior application will always open floating
+for_window [class="Viewnior"] floating enable1
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -154,10 +154,10 @@ set $count2 10
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the windowâs width.
+        # Pressing right will grow the windowâs width.
+        # Pressing up will shrink the windowâs height.
+        # Pressing down will grow the windowâs height.
         bindsym $left       resize shrink width $count px or $count2 ppt
         bindsym $down       resize grow height $count px or $count2 ppt
         bindsym $up         resize shrink height $count px or $count2 ppt
