@@ -22,7 +22,7 @@ font pango:monospace 8
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesnât scale on retina/hidpi displays.
+# font, it doesn’t scale on retina/hidpi displays.
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -32,6 +32,9 @@ set $left h
 set $right l
 set $mod Mod4
 
+# Disable focues following mouse
+# focus_follows_mouse no
+
 # Hide border adjacent to screen edges
 hide_edge_borders both
 
@@ -39,7 +42,9 @@ hide_edge_borders both
 # for_window [class="[.]*"] floating enable
 #
 # Viewnior application will always open floating
-for_window [class="Viewnior"] floating enable1
+for_window [class="Viewnior"] floating enable
+for_window [class="Gpick"] floating enable
+for_window [class="File-roller"] floating enable
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -154,10 +159,10 @@ set $count2 10
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the windowâs width.
-        # Pressing right will grow the windowâs width.
-        # Pressing up will shrink the windowâs height.
-        # Pressing down will grow the windowâs height.
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
         bindsym $left       resize shrink width $count px or $count2 ppt
         bindsym $down       resize grow height $count px or $count2 ppt
         bindsym $up         resize shrink height $count px or $count2 ppt
@@ -179,7 +184,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        # status_command i3status
+        status_command custom-i3status
 }
 
 #######################################################################
@@ -196,4 +202,5 @@ exec --no-startup-id xbindkeys -p
 exec --no-startup-id xset s noblank
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
+exec --no-startup-id amixer set Capture 100%
 #exec --no-startup-id i3-config-wizard
