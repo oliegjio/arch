@@ -1,0 +1,13 @@
+#!/bin/bash
+
+i3status | while :
+do
+	read line
+	isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
+	if [ "$isMicOn" ]; 
+	then
+		echo "Mic On | $line" || exit 1
+	else
+		echo "Mic Off | $line" || exit 1
+	fi
+done
