@@ -6,3 +6,4 @@ Where to place files:
 + `microphone-toggle-notify` - /bin/
 + `rootrun` - /bin/
 + `.i3/` - /home/archie/
++ `custom-i3status` - /bin/
