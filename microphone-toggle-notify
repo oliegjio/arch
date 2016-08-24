@@ -1,0 +1,10 @@
+#!/bin/bash
+
+isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
+#if [amixer get 'Capture',0 | grep "\[on\]"]
+if [ "$isMicOn" ];
+then
+	twmnc -c "Micro On" -d 1
+else
+	twmnc -c "Micro Off" -d 1
+fi
