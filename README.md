@@ -8,15 +8,3 @@
 + `.i3/` - /home/archie/
 + `custom-i3status` - /bin/
 
-### Autostart program/script:
-`vim /etc/systemd/system/< service_name >.service`
-```txt
-[Unit]
-Description="< service_description >"
-
-[Service]
-ExecStart=< path_to_executable >
-
-[Install]
-WantedBy=multi-user.target
-```
