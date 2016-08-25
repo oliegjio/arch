@@ -1,4 +1,4 @@
-# For the benefit of emacs users: -*- shell-script -*-
+
 ###########################
 # xbindkeys configuration #
 ###########################
@@ -50,11 +50,11 @@
   Mod2 + Print
 
 # Increase Volume
-"amixer -c 0 sset Master 3%+"
+"amixer -c 0 sset Master 3%+ && speaker-volume-notify"
   XF86AudioRaiseVolume
 
 # Decrease Volume
-"amixer -c 0 sset Master 3%-"
+"amixer -c 0 sset Master 3%- && speaker-volume-notify"
   XF86AudioLowerVolume
 
 ##################################
