@@ -203,4 +203,5 @@ exec --no-startup-id xset s noblank
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 exec --no-startup-id amixer set Capture 100%
+exec --no-startup-id twmnd
 #exec --no-startup-id i3-config-wizard
