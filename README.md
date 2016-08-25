@@ -1,4 +1,4 @@
-Where to place files:
+### Where to place files:
 + `.i3status.conf` - /home/archie/
 + `.xbindkeysrc` - /home/archie/
 + `.xinitrc` - /home/archie/
@@ -7,3 +7,16 @@ Where to place files:
 + `rootrun` - /bin/
 + `.i3/` - /home/archie/
 + `custom-i3status` - /bin/
+
+### Autostart program/script:
+`vim /etc/systemd/system/< service_name >.service`
+```bash
+[Unit]
+Description="< service_description >"
+
+[Service]
+ExecStart=< path_to_executable >
+
+[Install]
+WantedBy=multi-user.target
+```
