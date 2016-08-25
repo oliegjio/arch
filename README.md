@@ -10,7 +10,7 @@
 
 ### Autostart program/script:
 `vim /etc/systemd/system/< service_name >.service`
-```bash
+```txt
 [Unit]
 Description="< service_description >"
 
