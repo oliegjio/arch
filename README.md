@@ -9,3 +9,4 @@
 + `custom-i3status` - /bin/
 + `.config/` - /home/archie/
 + `speaker-volume-notify` - /bin/
++ `.tmux.conf` - /home/archie/
