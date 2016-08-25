@@ -38,7 +38,7 @@
 #keystate_scrolllock= enable
 
 # Toggle Micro
-"amixer set 'Capture',0 toggle"
+"amixer set 'Capture',0 toggle && microphone-toggle-notify"
   Pause
 
 # Screenshot Fullscreen
