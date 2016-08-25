@@ -1,0 +1,26 @@
+open_with :q
+rename index.php
+open_with viewnior
+rename myface2.png
+search logo
+! echo LOL
+shell echo LOL
+mkdir temp
+open_with vim --remote
+open_with vim
+search ranger
+delete
+mkdir ranger
+git add .
+g
+pwd | xclip -sel
+pw
+shell pwd | xclip -sel
+shell xclip -sel clip < pwd
+shell pwd | xclip -sel clipboard
+shell pwd | xclip -o
+shell 
+
+!
+shell pwd | xclip
+q
