@@ -8,3 +8,4 @@
 + `.i3/` - /home/archie/
 + `custom-i3status` - /bin/
 + `.config/` - /home/archie/
++ `speaker-volume-notify` - /bin/
