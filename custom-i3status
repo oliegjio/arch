@@ -4,7 +4,7 @@ i3status | while :
 do
 	read line
 	isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
-    memUsage="$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2}')"
+    	memUsage="$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2}')"
 	if [ "$isMicOn" ]; 
 	then
 		echo "Microphone On | RAM Usage: $memUsage | $line" || exit 1
