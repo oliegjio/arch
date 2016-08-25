@@ -7,4 +7,4 @@
 + `rootrun` - /bin/
 + `.i3/` - /home/archie/
 + `custom-i3status` - /bin/
-
++ `.config/` - /home/archie/
