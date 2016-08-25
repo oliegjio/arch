@@ -1,0 +1,4 @@
+#!/bin/bash
+
+speakerVolume="$([[ "$(amixer get 'Master')" =~ ([0-9]*%) ]] && echo "${BASH_REMATCH[1]}")"
+twmnc -c "$speakerVolume" --fg white -d 150 -s 25 --fs 16
