@@ -4,7 +4,7 @@ isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
 #if [amixer get 'Capture',0 | grep "\[on\]"]
 if [ "$isMicOn" ];
 then
-	twmnc -c "Micro On" -d 1
+	twmnc -c "Mic On" --fg red -d 500 -s 25 --fs 16
 else
-	twmnc -c "Micro Off" -d 1
+	twmnc -c "Mic Off" --fg red -d 500 -s 25 --fs 16
 fi
