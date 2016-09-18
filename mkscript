@@ -1,0 +1,10 @@
+#!/bin/bash
+
+touch /bin/$1
+chmod uog+x /bin/$1
+cat > /bin/$1 << EOF
+#!/bin/bash
+
+
+EOF
+vim /bin/$1
