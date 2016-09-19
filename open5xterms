@@ -2,7 +2,7 @@
 
 my_time=0.4
 
-com_1=":"
+com_1="vim"
 com_2=":"
 com_3=":"
 com_4="ranger"
