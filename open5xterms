@@ -1,6 +1,6 @@
 #!/bin/bash
 
-my_time=0.2
+my_time=0.4
 
 com_1=":"
 com_2=":"
