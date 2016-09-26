@@ -45,6 +45,8 @@ hide_edge_borders both
 for_window [class="Viewnior"] floating enable
 for_window [class="Gpick"] floating enable
 for_window [class="File-roller"] floating enable
+for_window [class="Tk"] floating enable
+for_window [class="Toplevel"] floating enable
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -88,6 +90,21 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# class                 border  backgr. text    indicator child_border
+# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+# client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #900000 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# class                 border  backgr. text    indicator child_border
+# client.focused          #440000 #ff0000 #000000 #cc0000   #440000
+# client.focused_inactive #440000 #770000 #ffffff #cc0000   #440000
+# client.unfocused        #440000 #440000 #ffffff #cc0000   #440000
+# client.urgent           #440000 #900000 #ffffff #cc0000   #440000
+# client.placeholder      #440000 #440000 #ffffff #cc0000   #440000
+
+client.background       #ffffff
 
 # split in horizontal orientation
 bindsym $mod+c split h
@@ -203,5 +220,6 @@ exec --no-startup-id xset s noblank
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 exec --no-startup-id amixer set Capture 100%
+exec --no-startup-id feh --bg-fill ~/Background/background.png
 exec --no-startup-id twmnd
 #exec --no-startup-id i3-config-wizard
