@@ -42,11 +42,11 @@
   Pause
 
 # Screenshot Fullscreen
-"sleep 0.1 && scrot '%T_%Y-%m-%d.png' -b -z -e 'mv $f /home/archie/Screenshots/'"
+"sleep 0.1 && scrot '%T_%Y-%m-%d.png' -b -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
   Mod2 + Scroll_Lock
 
 # Screenshot Region
-"sleep 0.1 && scrot '%T_%Y-%m-%d.png' -b -s -z -e 'mv $f /home/archie/Screenshots/'"
+"sleep 0.1 && scrot '%T_%Y-%m-%d.png' -b -s -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
   Mod2 + Print
 
 # Increase Volume
