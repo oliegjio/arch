@@ -43,10 +43,12 @@ hide_edge_borders both
 #
 # Viewnior application will always open floating
 for_window [class="Viewnior"] floating enable
-for_window [class="Gpick"] floating enable
 for_window [class="File-roller"] floating enable
+for_window [class="smplayer"] floating enable
+for_window [class="Pinta"] floating enable
 for_window [class="Tk"] floating enable
 for_window [class="Toplevel"] floating enable
+for_window [class="XCalc"] floating enable
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
