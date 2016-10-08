@@ -51,6 +51,7 @@ for_window [class="Tk"] floating enable
 for_window [class="Toplevel"] floating enable
 for_window [class="XCalc"] floating enable
 for_window [window_role="pop-up"] floating enable
+for_window [class="FXTerm"] floating enable
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
