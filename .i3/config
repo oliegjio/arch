@@ -42,6 +42,7 @@ hide_edge_borders both
 # for_window [class="[.]*"] floating enable
 #
 # Viewnior application will always open floating
+for_window [class="Xmessage"] floating enable
 for_window [class="Viewnior"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="smplayer"] floating enable
@@ -49,6 +50,7 @@ for_window [class="Pinta"] floating enable
 for_window [class="Tk"] floating enable
 for_window [class="Toplevel"] floating enable
 for_window [class="XCalc"] floating enable
+for_window [window_role="pop-up"] floating enable
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -223,5 +225,6 @@ exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 exec --no-startup-id amixer set Capture 100%
 exec --no-startup-id feh --bg-fill ~/Background/background.png
-exec --no-startup-id twmnd
+#exec --no-startup-id twmnd
+exec --no-startup-id dunst
 #exec --no-startup-id i3-config-wizard
