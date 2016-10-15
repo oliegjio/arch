@@ -10,3 +10,4 @@
 + `.config/` - /home/archie/
 + `speaker-volume-notify` - /bin/
 + `.tmux.conf` - /home/archie/
++ `.Xresources` - /home/archie/
