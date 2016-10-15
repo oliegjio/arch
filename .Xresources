@@ -1,0 +1,4 @@
+XTerm*locale: true
+XTerm*reverseVideo: on
+XTerm*utf8: true
+XTerm*font:-misc-fixed-medium-r-normal-*-*-130-*-*-*-*-iso10646-1
