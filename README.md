@@ -11,3 +11,4 @@
 + `speaker-volume-notify` - /bin/
 + `.tmux.conf` - /home/archie/
 + `.Xresources` - /home/archie/
++ `bash.bashrc` - /etc/
