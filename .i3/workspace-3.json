@@ -1,6 +1,4 @@
-// vim:ts=4:sw=4:et
 {
-    // splith split container with 2 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
@@ -8,10 +6,9 @@
     "type": "con",
     "nodes": [
         {
-            // splitv split container with 1 children
             "border": "normal",
             "floating": "auto_off",
-            "layout": "splitv",
+            "layout": "splith",
             "percent": 0.5,
             "type": "con",
             "nodes": [
@@ -36,148 +33,8 @@
                        }
                     ],
                     "type": "con"
-                }
-            ]
-        },
-        {
-            // splitv split container with 2 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "normal",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 340,
-                       "width": 564,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "archie@arch:~",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                       "class": "^XTerm$",
-                       "instance": "^xterm$",
-                       // "title": "^archie\\@arch\\:\\~$",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
                 },
                 {
-                    // splitv split container with 1 children
-                    "border": "normal",
-                    "floating": "auto_off",
-                    "layout": "splitv",
-                    "percent": 0.5,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 340,
-                               "width": 564,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "archie@arch:~",
-                            "percent": null,
-                            "swallows": [
-                               {
-                               "class": "^XTerm$",
-                               "instance": "^xterm$",
-                               // "title": "^archie\\@arch\\:\\~$",
-                               "transient_for": "^$"
-                               }
-                            ],
-                            "type": "con"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-{
-    // splith split container with 2 children
-    "border": "normal",
-    "floating": "auto_off",
-    "layout": "splitv",
-    "percent": 0.5,
-    "type": "con",
-    "nodes": [
-        {
-            // splith split container with 2 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splith",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "normal",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 340,
-                       "width": 564,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "archie@arch:~",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                       "class": "^XTerm$",
-                       "instance": "^xterm$",
-                       // "title": "^archie\\@arch\\:\\~$",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "normal",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 340,
-                       "width": 564,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "archie@arch:~",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                       "class": "^XTerm$",
-                       "instance": "^xterm$",
-                       // "title": "^archie\\@arch\\:\\~$",
-                       "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        },
-        {
-            // splitv split container with 2 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    // splith split container with 1 children
                     "border": "normal",
                     "floating": "auto_off",
                     "layout": "splith",
@@ -205,14 +62,44 @@
                                }
                             ],
                             "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 340,
+                               "width": 564,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "archie@arch:~",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^XTerm$",
+                               "instance": "^xterm$",
+                               // "title": "^archie\\@arch\\:\\~$",
+                               "transient_for": "^$"
+                               }
+                            ],
+                            "type": "con"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
                 {
-                    // splith split container with 2 children
                     "border": "normal",
                     "floating": "auto_off",
-                    "layout": "splith",
+                    "layout": "splitv",
                     "percent": 0.5,
                     "type": "con",
                     "nodes": [
@@ -227,7 +114,7 @@
                                "y": 0
                             },
                             "name": "archie@arch:~",
-                            "percent": 0.5,
+                            "percent": 1,
                             "swallows": [
                                {
                                "class": "^XTerm$",
@@ -249,7 +136,7 @@
                                "y": 0
                             },
                             "name": "archie@arch:~",
-                            "percent": 0.5,
+                            "percent": 1,
                             "swallows": [
                                {
                                "class": "^XTerm$",
@@ -261,8 +148,62 @@
                             "type": "con"
                         }
                     ]
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splitv",
+                    "percent": 0.5,
+                    "type": "con",
+                    "nodes": [
+                          {
+                                "border": "normal",
+                                "current_border_width": 2,
+                                "floating": "auto_off",
+                                "geometry": {
+                                   "height": 340,
+                                   "width": 564,
+                                   "x": 0,
+                                   "y": 0
+                                },
+                                "name": "archie@arch:~",
+                                "percent": 1,
+                                "swallows": [
+                                   {
+                                   "class": "^XTerm$",
+                                   "instance": "^xterm$",
+                                   // "title": "^archie\\@arch\\:\\~$",
+                                   "transient_for": "^$"
+                                   }
+                                ],
+                                "type": "con"
+                            },
+                            {
+                                "border": "normal",
+                                "current_border_width": 2,
+                                "floating": "auto_off",
+                                "geometry": {
+                                   "height": 340,
+                                   "width": 564,
+                                   "x": 0,
+                                   "y": 0
+                                },
+                                "name": "archie@arch:~",
+                                "percent": 1,
+                                "swallows": [
+                                   {
+                                   "class": "^XTerm$",
+                                   "instance": "^xterm$",
+                                   // "title": "^archie\\@arch\\:\\~$",
+                                   "transient_for": "^$"
+                                   }
+                                ],
+                                "type": "con"
+                            }
+                    ]
                 }
             ]
         }
     ]
 }
+
