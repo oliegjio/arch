@@ -1,4 +1,4 @@
 #!/bin/bash
 
 i3-msg "workspace 3; append_layout /home/archie/.i3/workspace-3.json"
-gksudo -k -u root open8xterms $1
+open8xterms $1
