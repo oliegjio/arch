@@ -1,0 +1,17 @@
+#!/bin/bash
+TMP_AVI=$(mktemp /tmp/XXXXXXXXXX.avi)
+if [ -z "$1" ]; then
+  TIME_1=5
+else
+  TIME_1=$(($1))
+fi  
+TIME_2=$(($TIME_1 + 1))
+TIME_3=$(($TIME_2 * 2))
+NAME=$(date +"%S%M%H%d%m%Y")
+ffcast -s % ffmpeg -y -t $TIME_1 -f x11grab -show_region 1 -framerate 15 \
+    -video_size %s -i %D+%c -codec:v huffyuv                  \
+    -vf crop="iw-mod(iw\\,2):ih-mod(ih\\,2)" $TMP_AVI         \
+    && convert -set delay $TIME_2 -layers Optimize $TMP_AVI /home/archie/Screenshots/$NAME.gif
+rm $TMP_AVI
+sleep $TIME_3
+copyq add /home/archie/Screenshots/$NAME.gif
