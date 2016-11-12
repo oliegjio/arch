@@ -61,6 +61,7 @@ for_window [instance="NoteXTerm"] floating enable
 for_window [instance="NoteXTerm"] move absolute position 1350 px 0 px
 for_window [title="Minecraft*"] floating enable
 for_window [class="Transmission-gtk"] floating enable
+for_window [class="copyq"] floating enable
 # for_window [class="Gimp"] floating enable 
 for_window [title="GNU Image Manipulation Program"] floating enable; resize shrink width 10000px; resize grow width 1200px; resize shrink height 10000px; resize grow height 900px; move absolute position 300 px 50 px;
 
@@ -240,4 +241,5 @@ exec --no-startup-id amixer set Capture 100%
 exec --no-startup-id feh --bg-fill ~/Background/background.png
 #exec --no-startup-id twmnd
 exec --no-startup-id dunst
+exec --no-startup-id copyq &
 #exec --no-startup-id i3-config-wizard
