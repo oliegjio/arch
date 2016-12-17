@@ -19,7 +19,7 @@ alias ln='ln -i'
 function nohupfunc(){
 	nohup $@ </dev/null >/dev/null 2>&1 &
 }
-alias nohup=nohupfunc
+alias det=nohupfunc
 
 PS1='[\u@\h \W]\$ '
 PS2='> '
