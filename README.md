@@ -1,8 +1,8 @@
 ### Install Arch Linux:
 1. ```fdisk -l```.
 2. ```cfdisk /dev/sda```.
-    a. Create primary partition with boot flag and Linux file system (ID - 83).
-    b. Create primary partition with Linux swap file system (ID - 82).
+    1. Create primary partition with boot flag and Linux file system (ID - 83).
+    2. Create primary partition with Linux swap file system (ID - 82).
 3. ```mkfs.ext4 /dev/sda3```
 4. 
 
