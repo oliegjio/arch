@@ -32,10 +32,24 @@
 19. ```umount /mnt```.
 20. ```reboot```.
 
+### Installing i3:
+1. Login with non-root (archie) user account.
+2. ```sudo pacman -S xorg-server xorg-xinit xterm i3 dmenu gvim```.
+3. ```vim /home/archie/.xinitrc``` and write: ```exec i3```
+4. ```reboot```
+
+### Essential packages:
+```git xclip feh xbindkeys scrot gksu dunst alsautils```.
+
 ### Restore configurations:
 1. Clone this repository.
 2. Make all binaries executable by the command: ```sudo chmod uog+rwx *``` (while you are in the ```copy/usr/bin/``` directory).
 3. Copy all files and folder and preserve ownerships: ```sudo cp -a * /``` (while in the ```copy/``` directory).
+
+### Install YAOURT:
+1. ```git clone https://aur.archlinux.org/package-query```.
+2. ```git clone https://aur.archlinux.org/yaourt```.
+3. And then cd to package-query and the yaourt directories and execute: ```makepkg -sri```.
 
 ### Write ISO to USB:
 ```dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync```.
