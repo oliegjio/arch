@@ -3,8 +3,34 @@
 2. ```cfdisk /dev/sda```.
     1. Create primary partition with boot flag and Linux file system (ID - 83).
     2. Create primary partition with Linux swap file system (ID - 82).
-3. ```mkfs.ext4 /dev/sda3```
-4. 
+3. ```mkfs.ext4 /dev/sda3```.
+4. Create SWAP:
+    1. ```mkswap /dev/sda4```.
+    2. ```swapon /dev/sda4```.
+5. ```mount /dev/sda3 /mnt```.
+6. ```pacstrap /mnt base base-devel```.
+7. ```arch-chroot /mnt```.
+8. Creating default user:
+    1. ```passwd```.
+    2. ```useradd -m -G wheel archie```.
+    3. ```passwd archie```.
+    4. ```nano /etc/sudoers``` and add: ```archie ALL=(ALL) ALL```.
+9. Configure locales:
+    1. ```nano /etc/locale.gen``` and uncomment two lines with "en_US" in the beginning.
+    2. ```locale-gen```.
+10. Configure time zone:
+    1. ```rm /etc/localtime```.
+    2. ```ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime```.
+11. ```echo arch > /etc/hostname```.
+12. ```pacman -S grub os-prober```.
+13. ```grub-install /dev/sda```.
+14. ```os-prober```.
+15. ```mkinitcpio -p linux```.
+16. ```grub-mkconfig -o /boot/grub/grub.cfg```.
+17. ```exit```.
+18. ```genfstab /mnt >> /mnt/etc/fstab```.
+19. ```umount /mnt```.
+20. ```reboot```.
 
 ### Restore configurations:
 1. Clone this repository.
