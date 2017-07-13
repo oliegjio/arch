@@ -99,11 +99,10 @@
     
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
-    # sticky_history = yes
-    sticky_history = yes
+    sticky_history = no
     
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 4
     
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -161,18 +160,18 @@
     # Xev might be helpful to find names for keys.
     
     # Close notification.
-    close = ctrl+space
+    #close = ctrl+space
     
     # Close all notifications.
-    close_all = ctrl+shift+space
+    #close_all = ctrl+shift+space
     
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    history = ctrl+grave
+    #history = ctrl+grave
     
     # Context menu.
-    context = ctrl+shift+period
+    #context = ctrl+shift+period
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
