@@ -27,7 +27,7 @@
     sort = no
     
     # Show how many messages are currently hidden (because of geometry).
-    # indicate_hidden = yes
+    stack_duplicates = no
     indicate_hidden = no
     
     # Alignment of message text.
