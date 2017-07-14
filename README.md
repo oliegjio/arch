@@ -41,6 +41,10 @@
 ### Essential packages:
 ```git xclip feh xbindkeys scrot gksu dunst alsautils```.
 
+### Useful packages:
+1. ```parole gst-libav gst-plugins-ugly gst-plugins-bad gst-plugins-base``` - Media player.
+2. ```rtorrent``` - CLI torrent client.
+
 ### Restore configurations:
 1. Clone this repository.
 2. Make all binaries executable by the command: ```sudo chmod uog+rwx *``` (while you are in the ```copy/usr/bin/``` directory).
