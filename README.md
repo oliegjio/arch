@@ -44,6 +44,7 @@
 ### Useful packages:
 1. ```parole gst-libav gst-plugins-ugly gst-plugins-bad gst-plugins-base``` - Media player.
 2. ```rtorrent``` - CLI torrent client.
+3. ```p7zip unrar``` - CLI archivers.
 
 ### Restore configurations:
 1. Clone this repository.
