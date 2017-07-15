@@ -35,8 +35,8 @@
 ### Installing i3:
 1. Login with non-root (archie) user account.
 2. ```sudo pacman -S xorg-server xorg-xinit xterm i3 dmenu gvim```.
-3. ```vim /home/archie/.xinitrc``` and write: ```exec i3```
-4. ```reboot```
+3. ```vim /home/archie/.xinitrc``` and write: ```exec i3```.
+4. ```reboot```.
 
 ### Essential packages:
 ```git xclip feh xbindkeys scrot gksu dunst alsautils```.
@@ -45,6 +45,7 @@
 1. ```parole gst-libav gst-plugins-ugly gst-plugins-bad gst-plugins-base``` - Media player.
 2. ```rtorrent``` - CLI torrent client.
 3. ```p7zip unrar``` - CLI archivers.
+4. ```viewnior``` - View images.
 
 ### Restore configurations:
 1. Clone this repository.
