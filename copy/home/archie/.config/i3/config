@@ -96,10 +96,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+$left move left 74px
+bindsym $mod+Shift+$left move left 119px
+bindsym $mod+Shift+$right move right 149px
 bindsym $mod+Shift+$down move down 84px
 bindsym $mod+Shift+$up move up 84px
-bindsym $mod+Shift+$right move right 74px
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
