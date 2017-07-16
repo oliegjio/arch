@@ -39,7 +39,7 @@
 4. ```reboot```.
 
 ### Essential packages:
-```git xclip feh xbindkeys scrot gksu dunst alsautils```.
+```git xclip feh xbindkeys scrot gksu dunst alsautils conky vifm```.
 
 ### Useful packages:
 1. ```parole gst-libav gst-plugins-ugly gst-plugins-bad gst-plugins-base``` - Media player.
@@ -47,7 +47,7 @@
 3. ```p7zip unrar``` - CLI archivers.
 4. ```viewnior``` - View images.
 5. ```ffmpeg``` - CLI video editor.
-6. (AUR) ```recordmydesktop``` - CLI screen recorder.
+6. ```recordmydesktop``` - (AUR) CLI screen recorder.
 
 ### Restore configurations:
 1. Clone this repository.
