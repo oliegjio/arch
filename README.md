@@ -47,6 +47,7 @@
 3. ```p7zip unrar``` - CLI archivers.
 4. ```viewnior``` - View images.
 5. ```ffmpeg``` - CLI video editor.
+6. (AUR) ```recordmydesktop``` - CLI screen recorder.
 
 ### Restore configurations:
 1. Clone this repository.
