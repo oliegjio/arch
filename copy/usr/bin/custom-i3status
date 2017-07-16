@@ -7,8 +7,8 @@ do
     	memUsage="$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2}')"
 	if [ "$isMicOn" ]; 
 	then
-		echo "Microphone On | RAM Usage: $memUsage | $line" || exit 1
+		echo "Microphone is On | RAM Usage: $memUsage | $line" || exit 1
 	else
-		echo "Microphone Off | RAM Usage: $memUsage | $line" || exit 1
+		echo "Microphone is Off | RAM Usage: $memUsage | $line" || exit 1
 	fi
 done
