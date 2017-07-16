@@ -12,6 +12,7 @@ alias rm='rm -Irf'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
+alias l="ls -1tr * | tail -1 | awk '{print \$9}'"
 
 
 PS1='[\u@\h \W]\$ '
