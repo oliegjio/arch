@@ -46,6 +46,7 @@
 2. ```rtorrent``` - CLI torrent client.
 3. ```p7zip unrar``` - CLI archivers.
 4. ```viewnior``` - View images.
+5. ```ffmpeg``` - CLI video editor.
 
 ### Restore configurations:
 1. Clone this repository.
