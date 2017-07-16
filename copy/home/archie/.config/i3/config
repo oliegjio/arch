@@ -238,6 +238,7 @@ exec --no-startup-id xset -b
 exec --no-startup-id xset s off
 exec --no-startup-id amixer set Capture 100%
 exec --no-startup-id feh --bg-fill ~/Background/background.png
+exec --no-startup-id conky
 #exec --no-startup-id twmnd
 exec --no-startup-id dunst
 exec --no-startup-id setxkbmap -option caps:none
