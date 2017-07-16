@@ -40,6 +40,7 @@
 
 ### Essential packages:
 ```git xclip feh xbindkeys scrot gksu dunst alsautils conky vifm```.
+AUR: ```xkblayout-state```
 
 ### Useful packages:
 1. ```parole gst-libav gst-plugins-ugly gst-plugins-bad gst-plugins-base``` - Media player.
