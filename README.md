@@ -91,6 +91,6 @@ AUR: ```xkblayout-state```
 2. Execute: ```id3v2 -D *.mp3``` and ```eyeD3 --remove-all-images * *.mp3```.
 
 ### Shortcuts:
-## ViFM:
+#### ViFM:
 1. ```Ctrl+G``` - Show detailed information about the file.
 2. ```t``` - Multi-select.
