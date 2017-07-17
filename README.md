@@ -39,7 +39,7 @@
 4. ```reboot```.
 
 ### Essential packages:
-```git xclip feh xbindkeys scrot gksu dunst alsautils conky vifm```.
+```git xclip feh xbindkeys scrot gksu dunst alsautils conky vifm xorg-xprop```.
 AUR: ```xkblayout-state```
 
 ### Useful packages:
@@ -49,6 +49,7 @@ AUR: ```xkblayout-state```
 4. ```viewnior``` - View images.
 5. ```ffmpeg``` - CLI video editor.
 6. ```recordmydesktop``` - (AUR) CLI screen recorder.
+7. ```gpick``` - Color picker.
 
 ### Restore configurations:
 1. Clone this repository.
