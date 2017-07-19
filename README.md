@@ -39,7 +39,8 @@
 4. ```reboot```.
 
 ### Essential packages:
-```git xclip feh xbindkeys scrot gksu dunst alsautils conky vifm xorg-xprop```.
+```git xclip feh xbindkeys scrot gksu dunst alsa-utils conky vifm xorg-xprop```.
+
 AUR: ```xkblayout-state```
 
 ### Useful packages:
@@ -53,7 +54,7 @@ AUR: ```xkblayout-state```
 
 ### Restore configurations:
 1. Clone this repository.
-2. Make all binaries executable by the command: ```sudo chmod uog+rwx *``` (while you are in the ```copy/usr/bin/``` directory).
+2. Make all binaries executable and readable by the command: ```sudo chmod uog+rx *``` (while you are in the ```copy/usr/bin/``` directory).
 3. Copy all files and folder and preserve ownerships: ```sudo cp -a * /``` (while in the ```copy/``` directory).
 
 ### Install YAOURT:
