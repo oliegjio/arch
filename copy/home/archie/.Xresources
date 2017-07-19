@@ -1,5 +1,4 @@
 XTerm*locale: true
 XTerm*reverseVideo: on
 XTerm*utf8: true
-#XTerm*font:-misc-fixed-medium-r-normal-*-*-130-*-*-*-*-iso10646-1
 XTerm*font:-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
