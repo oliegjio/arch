@@ -1,5 +1,5 @@
 [global]
-    font = Monospace 12
+    font = Monospace 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -149,8 +149,8 @@
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [frame]
-    width = 3
-    color = "#aaaaaa"
+    width = 1
+    color = "#4682B4"
 
 [shortcuts]
 
