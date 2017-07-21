@@ -72,20 +72,20 @@ AUR: ```xkblayout-state```
 
 ### LAMP Stack Installation:
 1. Install Apache: ```sudo pacman -S apache```.
-2. To start Apache: ```sudo systemctl start httpd.service```.
     1. Apache configuration file located in: ```/etc/httpd/conf/httpd.conf```.
     2. Global serve directory: ```/srv/http/```.
     3. Per-user serve directory: ```~/public_html```.
     4. ```~/public_html``` directory and user's directory must have read-execute rights.
-3. Install PHP: ```sudo pacman -S php php-apache```.
-4. Setup PHP in ```/etc/httpd/conf/httpd.conf```:
+2. Install PHP: ```sudo pacman -S php php-apache```.
+3. Setup PHP in ```/etc/httpd/conf/httpd.conf```:
     1. Comment line ```LoadModule mpm_event_module modules/mod_mpm_event.so``` and uncomment line ```LoadModule mpm_prefork_module modules/mod_mpm_prefork.so```.
     2. Place this line ```LoadModule php7_module modules/libphp7.so``` and this line ```AddHandler php7-script php``` at the end of ```LoadModule``` list.
     3. Place this: ```Include conf/extra/php7_module.conf``` at the end of ```Include``` list.
     4. Restart Apache: ```sudo systemctl restart httpd.service```.
-5. Install MySQL/MariaDB: ```sudo pacman -S mariadb```.
+4. Install MySQL/MariaDB: ```sudo pacman -S mariadb```.
     1. Before running MariaDB, run: ```sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql```.
     2. Run MariaDB: ```sudo systemctl start mariadb.service```.
+5. To start Apache: ```sudo systemctl start httpd.service```.
 
 ### Removing Tags and Images from MP3:
 1. Install: ```sudo packman -S python-eyed3``` and ```sudo pacman -S id3v2```.
