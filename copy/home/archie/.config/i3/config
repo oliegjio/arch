@@ -47,6 +47,7 @@ hide_edge_borders both
 #
 # Viewnior application will always open floating
 for_window [class="Xmessage"] floating enable
+for_window [class="Upwork"] floating enable
 for_window [class="Viewnior"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Scite"] floating enable
@@ -62,6 +63,8 @@ for_window [class="Transmission-gtk"] floating enable
 for_window [class="Gpick"] floating enable
 for_window [class="copyq"] floating enable
 for_window [title="GNU Image Manipulation Program"] floating enable; resize shrink width 10000px; resize grow width 1200px; resize shrink height 10000px; resize grow height 900px; move absolute position 300 px 50 px;
+
+assign [class="Conky" title="whatever"] workspace 10
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
