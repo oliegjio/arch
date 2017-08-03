@@ -77,11 +77,15 @@ AUR: ```xkblayout-state```
     3. Per-user serve directory: ```~/public_html```.
     4. ```~/public_html``` directory and user's directory must have read-execute rights.
 2. Install PHP: ```sudo pacman -S php php-apache```.
-3. Setup PHP in ```/etc/httpd/conf/httpd.conf```:
+3. Setup Apache in ```/etc/httpd/conf/httpd.conf```:
     1. Comment line ```LoadModule mpm_event_module modules/mod_mpm_event.so``` and uncomment line ```LoadModule mpm_prefork_module modules/mod_mpm_prefork.so```.
     2. Place this line ```LoadModule php7_module modules/libphp7.so``` and this line ```AddHandler php7-script php``` at the end of ```LoadModule``` list.
     3. Place this: ```Include conf/extra/php7_module.conf``` at the end of ```Include``` list.
+    1. Uncomment line with ```LoadModule rewrite_module```.
     4. Restart Apache: ```sudo systemctl restart httpd.service```.
+1. Configure PHP in ```/etc/php/php.ini```:
+    1. Uncomment line with ```extension=mysqli.so```.
+    2. Uncomment line with ```extension=pdo_mysql.so```.
 4. Install MySQL/MariaDB: ```sudo pacman -S mariadb```.
     1. Before running MariaDB, run: ```sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql```.
     2. Run MariaDB: ```sudo systemctl start mariadb.service```.
