@@ -233,6 +233,7 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 exec --no-startup-id xbindkeys
+exec --no-startup-id xset -b
 exec --no-startup-id xbindkeys -p
 exec --no-startup-id xset s noblank
 exec --no-startup-id xset -dpms
