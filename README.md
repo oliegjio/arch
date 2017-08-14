@@ -39,9 +39,7 @@
 4. ```reboot```.
 
 ### Essential packages:
-```git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop python2 dbus-python python2-pip```.
-
-PIP: ```sudo pip2 install notify2```
+```git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop```.
 
 AUR: ```xkblayout-state```
 
