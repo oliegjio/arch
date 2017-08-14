@@ -1,2 +1,11 @@
 xrdb -merge ~/.Xresources
-exec i3
+
+case $wm in
+openbox)
+    exec openbox-session
+    ;;
+
+i3)
+    exec i3
+    ;;
+esac

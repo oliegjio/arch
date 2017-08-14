@@ -173,6 +173,20 @@
 <keyboard>
   <chainQuitKey>C-g</chainQuitKey>
 
+  <keybind key="W-d">
+      <action name="Execute">
+          <name>dmenu</name>
+          <command>dmenu_run</command>
+      </action>
+  </keybind>
+
+  <keybind key="W-Return">
+      <action name="Execute">
+          <name>xterm</name>
+          <command>xterm</command>
+      </action>
+  </keybind>
+
   <!-- Keybindings for desktop switching -->
   <keybind key="C-A-Left">
     <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
@@ -210,7 +224,7 @@
   <keybind key="W-F4">
     <action name="GoToDesktop"><to>4</to></action>
   </keybind>
-  <keybind key="W-d">
+  <keybind key="A-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
 
