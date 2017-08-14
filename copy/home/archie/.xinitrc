@@ -8,4 +8,7 @@ openbox)
 i3)
     exec i3
     ;;
+*)
+    exec i3
+    ;;
 esac
