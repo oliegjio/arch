@@ -50,11 +50,11 @@
   Mod2 + Print
 
 # Increase Volume
-"amixer -c 0 sset Master 3%+ && speaker-volume-notify"
+"amixer -c 0 sset Master 2%+ && speaker-volume-notify"
   XF86AudioRaiseVolume
 
 # Decrease Volume
-"amixer -c 0 sset Master 3%- && speaker-volume-notify"
+"amixer -c 0 sset Master 2%- && speaker-volume-notify"
   XF86AudioLowerVolume
 
 ##################################
