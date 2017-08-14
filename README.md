@@ -39,7 +39,7 @@
 4. ```reboot```.
 
 ### Essential packages:
-```git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop```.
+```git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop openbox```.
 
 AUR: ```xkblayout-state dunstify```
 
