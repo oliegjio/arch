@@ -67,7 +67,7 @@
     <name>Misc Fixed</name>
     <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -76,7 +76,7 @@
     <name>Misc Fixed</name>
     <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -103,7 +103,7 @@
     <name>Misc Fixed</name>
     <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -112,7 +112,7 @@
     <name>Misc Fixed</name>
     <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
