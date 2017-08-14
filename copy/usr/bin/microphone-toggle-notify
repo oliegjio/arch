@@ -4,9 +4,11 @@ isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
 #if [amixer get 'Capture',0 | grep "\[on\]"]
 if [ "$isMicOn" ];
 then
-	# twmnc -c "Mic On" --fg red -d 500 -s 25 --fs 16
-    notify-send -t 1 "Mic On" -h string:bgcolor:#00ff00 -h string:fgcolor:#000000
+    # twmnc -c "Mic On" --fg red -d 500 -s 25 --fs 16
+    # notify-send -t 1 "Mic On" -h string:bgcolor:#00ff00 -h string:fgcolor:#000000
+    dunstify -r $(</tmp/nid) -t 1 "Mic On" -h string:bgcolor:#00ff00 -h string:fgcolor:#000000
 else
-	# twmnc -c "Mic Off" --fg red -d 500 -s 25 --fs 16
-    notify-send -t 1 "Mic Off" -h string:bgcolor:#ff0000 -h string:fgcolor:#000000
+    # twmnc -c "Mic Off" --fg red -d 500 -s 25 --fs 16
+    # notify-send -t 1 "Mic Off" -h string:bgcolor:#ff0000 -h string:fgcolor:#000000
+    dunstify -r $(</tmp/nid) -t 1 "Mic Off" -h string:bgcolor:#ff0000 -h string:fgcolor:#000000
 fi
