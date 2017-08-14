@@ -3,4 +3,4 @@
 speakerVolume="$([[ "$(amixer get 'Master')" =~ ([0-9]*%) ]] && echo "${BASH_REMATCH[1]}")"
 # twmnc -c "$speakerVolume" --fg white -d 150 -s 25 --fs 16
 # notify-send -t 1 "$speakerVolume" -h string:bgcolor:#000000 -h string:fgcolor:#ffffff 
-dunstify -r $(</home/archie/.nid) -t 1 "$speakerVolume" -h string:bgcolor:#000000 -h string:fgcolor:#ffffff 
+dunstify -r 1 -t 1 "$speakerVolume" -h string:bgcolor:#000000 -h string:fgcolor:#ffffff 
