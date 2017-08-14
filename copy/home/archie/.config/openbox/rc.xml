@@ -621,9 +621,9 @@
 </menu>
 
 <applications>
-    <application class="*">
-        <decor>no</decor>
-    </application>
+    <!-- <application class="*"> -->
+    <!--     <decor>no</decor> -->
+    <!-- </application> -->
 </applications>
 
 </openbox_config>
