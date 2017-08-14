@@ -51,6 +51,7 @@ AUR: ```xkblayout-state dunstify```
 5. ```ffmpeg``` - CLI video editor.
 6. ```recordmydesktop``` - (AUR) CLI screen recorder.
 7. ```gpick``` - Color picker.
+8. ```conky``` - Shows system stats on the desktop.
 
 ### Restore configurations:
 1. Clone this repository.
