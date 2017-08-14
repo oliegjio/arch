@@ -41,7 +41,7 @@
 ### Essential packages:
 ```git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop```.
 
-AUR: ```xkblayout-state```
+AUR: ```xkblayout-state dunstify```
 
 ### Useful packages:
 1. ```vlc``` - Media player.
