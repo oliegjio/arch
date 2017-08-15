@@ -23,7 +23,7 @@
     1. ```rm /etc/localtime```.
     2. ```ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime```.
 11. ```echo arch > /etc/hostname```.
-12. ```pacman -S grub os-prober```.
+12. ```pacman -S grub os-prober dialog```.
 13. ```grub-install /dev/sda```.
 14. ```os-prober```.
 15. ```mkinitcpio -p linux```.
