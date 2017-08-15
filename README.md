@@ -61,6 +61,11 @@ AUR: `xkblayout-state dunstify`
 
 ------
 
+### Fix Time:
+Run in Windows from Administrator Command Prompt: `reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f`.
+
+If `/etc/zoneinfo` was removed, refresh it with: `ln -s /usr/share/zoneinfo/Europe/Moscow /etc/zoneinfo`.
+
 ### Enable Wi-Fi on boot:
 1. After using `sudo wifi-menu` you will have profile generated in: `/etc/netctl/`, open this directory.
 2. Run: `sudo netctl start <PROFILE_NAME>` and `sudo netctl enable <PROFILE_NAME>`.
