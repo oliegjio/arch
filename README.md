@@ -59,7 +59,7 @@ AUR: ```xkblayout-state dunstify```
 7. ```gpick``` - Color picker.
 8. ```conky``` - Shows system stats on the desktop.
 
-===
+------
 
 ### Write ISO to USB:
 ```dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync```.
