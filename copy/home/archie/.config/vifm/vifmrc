@@ -1,5 +1,5 @@
 " vim: filetype=vifm :
-" Sample configuration file for vifm (last updated: 28 June, 2016)
+" Sample configuration file for vifm (last updated: 16 March, 2017)
 " You can edit this file by hand.
 " The " character at the beginning of a line comments out the line.
 " Blank lines are ignored.
@@ -22,6 +22,9 @@ set vicmd=vim
 " I recommend not changing this until you are familiar with vifm.
 " This probably shouldn't be an option.
 
+" Always show hidden files and folders
+windo normal za
+
 set trash
 
 " This is how many directories to store in the directory history.
@@ -35,7 +38,7 @@ set nofollowlinks
 " With this option turned on you can run partially entered commands with
 " unambiguous beginning using :! (e.g. :!Te instead of :!Terminal or :!Te<tab>).
 
-set fastrun
+" set fastrun
 
 " Natural sort of (version) numbers within text.
 
@@ -55,7 +58,7 @@ set novimhelp
 
 set norunexec
 
-" Use KiB, MiB, ... instead of KB, MB, ...
+" Use KiB, MiB, ... suffixes instead of K, M, ... for size.
 
 set noiec
 
@@ -107,7 +110,7 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+set statusline="  %T%= %A %10u:%-7g %15s %20d  "
 
 " ------------------------------------------------------------------------------
 
@@ -198,10 +201,10 @@ fileviewer *.flac soxi
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
          \*.as[fx]
-        \ {View using SMPlayer}
-        \ smplayer,
-        \ {View using ffplay}
-        \ ffplay -fs %f,
+        \ {View using VLC}
+        \ det vlc %f,
+        "\ {View using ffplay}
+        "\ ffplay -fs %f,
         \ {View using Dragon}
         \ dragon %f:p,
         \ {View using mplayer}
@@ -230,10 +233,10 @@ fileviewer *.[1-8] man ./%c | col -b
 
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-        \ {View in Viewnior}
-        \ viewnior,
-        \ {View in sxiv}
-        \ sxiv,
+        \ {View in viewnior}
+        \ det viewnior %f,
+        "\ {View in sxiv}
+        "\ sxiv %f,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
@@ -409,9 +412,9 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
 " Open file in existing instance of gvim
-" nnoremap o :!gvim --remote-tab-silent %f<cr>
+"nnoremap o :!gvim --remote-tab-silent %f<cr>
 " Open file in new instance of gvim
-" nnoremap O :!gvim %f<cr>
+"nnoremap O :!gvim %f<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
@@ -431,9 +434,9 @@ nnoremap A cw
 nnoremap ,t :!xterm &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
-nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
+"nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
 " Open gvim to edit vifmrc
-" nnoremap ,C :!gvim --remote-tab-silent $MYVIFMRC &<cr>
+"nnoremap ,C :!gvim --remote-tab-silent $MYVIFMRC &<cr>
 
 " Toggle wrap setting on ,w key
 nnoremap ,w :set wrap!<cr>
