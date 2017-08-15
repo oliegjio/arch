@@ -43,7 +43,6 @@
 1. `git clone https://aur.archlinux.org/package-query`.
 2. `git clone https://aur.archlinux.org/yaourt`.
 3. And then cd to package-query and the yaourt directories and execute: `makepkg -sri`.
-
 ### Essential packages:
 `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop openbox`.
 
@@ -60,6 +59,10 @@ AUR: `xkblayout-state dunstify`
 8. `conky` - Shows system stats on the desktop.
 
 ------
+
+### Configure Trackpad:
+1. Install: `sudo pacman -S xf86-input-synaptics`.
+2. Configs already in this backup in: `/etc/X11/xorg.conf.d/70-synaptics.conf`.
 
 ### Fix Time:
 Run in Windows from Administrator Command Prompt: `reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f`.
