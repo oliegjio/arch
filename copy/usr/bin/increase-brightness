@@ -1,0 +1,14 @@
+#!/bin/bash
+
+path=/sys/class/backlight/intel_backlight
+current=$(<$path/brightness)
+max=$(<$path/max_brightness)
+step=$((max/100*10))
+new=$((current+step))
+
+if [ "$new" -le "$max" ]; then
+    tee $path/brightness <<< $new
+    brightness-level-notify
+else
+    brightness-level-notify
+fi

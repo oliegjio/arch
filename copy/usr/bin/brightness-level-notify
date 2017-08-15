@@ -1,0 +1,6 @@
+#!/bin/bash
+
+value=$(</sys/class/backlight/intel_backlight/brightness)
+max_value=$(</sys/class/backlight/intel_backlight/max_brightness)
+percent=$((value*100/max_value))
+dunstify -r 1 -t 1 "Brightness: %$percent" -h string:bgcolor:#444400 -h string:fgcolor:#ffff00 
