@@ -67,6 +67,10 @@ AUR: `xkblayout-state dunstify`
 
 ------
 
+### Enable Wi-Fi on boot:
+1. After using `sudo wifi-menu` you will have profile generated in: `/etc/netctl/`, open this directory.
+2. Run: `sudo netctl start <PROFILE_NAME>` and `sudo netctl enable <PROFILE_NAME>`.
+
 ### Change Boot Order in Grub Menu:
 1. Open `/etc/default/grub` and change `GRUB_DEFAULT=0` to `GRUB_DEFAULT=saved`.
 2. Update grub: `sudo grub-mkconfig -o /boot/grub/grub.cfg`.
