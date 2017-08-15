@@ -1,3 +1,9 @@
+#### TODO:
+1. Grub Windows entry.
+2. Wifi autostart.
+3. Additional keybindings.
+4. Change grub menu entries order.
+
 ### Install Arch Linux:
 1. ```fdisk -l```.
 2. ```cfdisk /dev/sda```.
