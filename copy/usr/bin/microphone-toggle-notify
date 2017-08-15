@@ -1,8 +1,8 @@
 #!/bin/bash
 
-isMicOn="$(amixer get 'Capture',0 | grep '\[on\]')"
+isMicrophoneOn="$(amixer get 'Capture',0 | grep '\[on\]')"
 #if [amixer get 'Capture',0 | grep "\[on\]"]
-if [ "$isMicOn" ];
+if [ "$isMicrophoneOn" ];
 then
     # twmnc -c "Microphone On" --fg red -d 500 -s 25 --fs 16
     # notify-send -t 1 "Microphone On" -h string:bgcolor:#00cc00 -h string:fgcolor:#000000
