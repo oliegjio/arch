@@ -67,9 +67,13 @@ AUR: `xkblayout-state dunstify`
 
 ------
 
-### If os-prober didn't help:
-This solution is for BIOS-MBR installation.
-Open `/boot/grub/grub.cfg` and add:
+### Change Boot Order in Grub Menu:
+1. Open `/etc/default/grub` and change `GRUB_DEFAULT=0` to `GRUB_DEFAULT=saved`.
+2. Update grub: `sudo grub-mkconfig -o /boot/grub/grub.cfg`.
+3. Change default boot entry (starts from 0): `sudo grub-set-default 2`.
+
+### If OS-Prober Didn't Help:
+This solution is for BIOS-MBR installation. Open `/boot/grub/grub.cfg` and add:
 
 ```
 menuentry "Windows" {
