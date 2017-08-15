@@ -1,4 +1,4 @@
-#### TODO:
+##### TODO:
 1. Grub Windows entry.
 2. Wifi autostart.
 3. Additional keybindings.
@@ -66,6 +66,23 @@ AUR: ```xkblayout-state dunstify```
 8. ```conky``` - Shows system stats on the desktop.
 
 ------
+
+### If os-prober didn't help:
+This solution is for BIOS-MBR installation.
+Open `/boot/grub/grub.cfg` and add:
+
+```
+menuentry "Windows" {
+    insmod part_msdos
+    insmod ntfs
+    insmod search_fs_uuid
+    insmod ntldr     
+    search --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 $UUID
+    ntldr /bootmgr
+  }
+  ```
+  
+  $UUID can be found by executing: `blkid`.
 
 ### Write ISO to USB:
 ```dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync```.
