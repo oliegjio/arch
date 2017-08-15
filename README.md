@@ -8,6 +8,7 @@
     1. ```mkswap /dev/sda4```.
     2. ```swapon /dev/sda4```.
 5. ```mount /dev/sda3 /mnt```.
+5. If you have a wireless connection, run: ```wifi-menu```.
 6. ```pacstrap /mnt base base-devel```.
 7. ```arch-chroot /mnt```.
 8. Creating default user:
