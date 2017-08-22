@@ -132,6 +132,11 @@ menuentry "Windows" {
 1. Install: `sudo packman -S python-eyed3` and `sudo pacman -S id3v2`.
 2. Execute: `id3v2 -D *.mp3` and `eyeD3 --remove-all-images * *.mp3`.
 
+### Animated Wallpapers:
+1. Install: `sudo pacman -S mpv`.
+2. Run: `mpv --no-audio --loop=inf --wid=0 wallpaper.gif`.
+3. Possibly add command above to autostart to `~/.config/i3/config`.
+
 ### Shortcuts:
 #### ViFM:
 1. `Ctrl+G` - Show detailed information about the file.
