@@ -134,7 +134,7 @@ menuentry "Windows" {
 
 ### Animated Wallpapers:
 1. Install: `sudo pacman -S mpv`.
-2. Run: `mpv --no-audio --loop=inf --wid=0 wallpaper.gif`.
+2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Background/background.mp4`.
 3. Possibly add command above to autostart to `~/.config/i3/config`.
 
 ### Shortcuts:
