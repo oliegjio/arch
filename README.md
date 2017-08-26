@@ -64,6 +64,12 @@ AUR: `xkblayout-state dunstify`
 1. Install: `sudo pacman -S xf86-input-synaptics`.
 2. Configs already in this backup in: `/etc/X11/xorg.conf.d/70-synaptics.conf`.
 
+### Laptop Optimization:
+1. Install: `sudo pacman -S hdparm`.
+2. Execute: `sudo hdparm -B 1 /dev/sda`, `sudo hdparm -S 1 /dev/sda`, `sudo hdparm -M /dev/sda`.
+3. Install: `sudo pacman -S cpupower`.
+4. Execute: `sudo systemctl start cpupower.service` and `sudo systemctl enable cpupower.service`.
+
 ### Fix Time:
 Run in Windows from Administrator Command Prompt: `reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f`.
 
@@ -135,7 +141,7 @@ menuentry "Windows" {
 ### Animated Wallpapers:
 1. Install: `sudo pacman -S mpv`.
 2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Background/background.mp4`.
-3. Possibly add command above to autostart to `~/.config/i3/config`.
+3. Possibly add command above to `~/.config/i3/config` for autostart.
 
 ### Shortcuts:
 #### ViFM:
