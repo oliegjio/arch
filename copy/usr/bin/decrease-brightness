@@ -3,7 +3,7 @@
 path=/sys/class/backlight/intel_backlight
 current=$(<$path/brightness)
 max=$(<$path/max_brightness)
-step=$((max/100*10))
+step=$((max/100*5))
 new=$((current-step))
 
 if [ "$new" -ge 0 ]; then
