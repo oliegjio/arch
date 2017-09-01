@@ -38,6 +38,7 @@
 1. Clone this repository.
 2. Make all binaries executable and readable by the command: `sudo chmod uog+rx *` (while you are in the `copy/usr/bin/` directory).
 3. Copy all files and folder and preserve ownerships: `sudo cp -a * /` (while in the `copy/` directory).
+4. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
 
 ### Install YAOURT:
 1. `git clone https://aur.archlinux.org/package-query`.
