@@ -1,6 +1,6 @@
 #!/bin/bash
 
-my_time=0.4
+my_time=0.1
 
 com_1="vim"
 com_2="vifm"
