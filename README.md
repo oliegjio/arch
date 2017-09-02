@@ -40,6 +40,8 @@
 3. Copy all files and folder and preserve ownerships: `sudo cp -a * /` (while in the `copy/` directory).
 4. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
 
+Could try to copy with `rsync`, that excludes `.gitkeep`: `sudo rsync -a -C * /` (while in the `copy/` directory).
+
 ### Install YAOURT:
 1. `git clone https://aur.archlinux.org/package-query`.
 2. `git clone https://aur.archlinux.org/yaourt`.
