@@ -28,12 +28,71 @@
                        {
                        "class": "^XTerm$",
                        "instance": "^xterm$",
-                       // "title": "^archie\\@arch\\:\\~$",
                        "transient_for": "^$"
                        }
                     ],
                     "type": "con"
                 },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splitv",
+                    "percent": 0.5,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 340,
+                               "width": 564,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "archie@arch:~",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^XTerm$",
+                               "instance": "^xterm$",
+                               "transient_for": "^$"
+                               }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 340,
+                               "width": 564,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "archie@arch:~",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^XTerm$",
+                               "instance": "^xterm$",
+                               "transient_for": "^$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
                 {
                     "border": "normal",
                     "floating": "auto_off",
@@ -57,7 +116,6 @@
                                {
                                "class": "^XTerm$",
                                "instance": "^xterm$",
-                               // "title": "^archie\\@arch\\:\\~$",
                                "transient_for": "^$"
                                }
                             ],
@@ -79,69 +137,6 @@
                                {
                                "class": "^XTerm$",
                                "instance": "^xterm$",
-                               // "title": "^archie\\@arch\\:\\~$",
-                               "transient_for": "^$"
-                               }
-                            ],
-                            "type": "con"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splith",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "normal",
-                    "floating": "auto_off",
-                    "layout": "splitv",
-                    "percent": 0.5,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 340,
-                               "width": 564,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "archie@arch:~",
-                            "percent": 1,
-                            "swallows": [
-                               {
-                               "class": "^XTerm$",
-                               "instance": "^xterm$",
-                               // "title": "^archie\\@arch\\:\\~$",
-                               "transient_for": "^$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 340,
-                               "width": 564,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "archie@arch:~",
-                            "percent": 1,
-                            "swallows": [
-                               {
-                               "class": "^XTerm$",
-                               "instance": "^xterm$",
-                               // "title": "^archie\\@arch\\:\\~$",
                                "transient_for": "^$"
                                }
                             ],
@@ -152,7 +147,7 @@
                 {
                     "border": "normal",
                     "floating": "auto_off",
-                    "layout": "splitv",
+                    "layout": "splith",
                     "percent": 0.5,
                     "type": "con",
                     "nodes": [
@@ -172,7 +167,6 @@
                                    {
                                    "class": "^XTerm$",
                                    "instance": "^xterm$",
-                                   // "title": "^archie\\@arch\\:\\~$",
                                    "transient_for": "^$"
                                    }
                                 ],
@@ -194,7 +188,6 @@
                                    {
                                    "class": "^XTerm$",
                                    "instance": "^xterm$",
-                                   // "title": "^archie\\@arch\\:\\~$",
                                    "transient_for": "^$"
                                    }
                                 ],
@@ -206,4 +199,3 @@
         }
     ]
 }
-
