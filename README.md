@@ -63,6 +63,9 @@ AUR: `xkblayout-state dunstify`
 
 ------
 
+### Enable Screen Lock Before Sleep:
+`sudo systemctl enable i3lock-autorun.service`
+
 ### Configure Trackpad:
 1. Install: `sudo pacman -S xf86-input-synaptics`.
 2. Configs already in this backup in: `/etc/X11/xorg.conf.d/70-synaptics.conf`.
