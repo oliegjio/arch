@@ -53,6 +53,7 @@ AUR: `xkblayout-state dunstify`
 
 ### Useful packages:
 1. `vlc` - Media player.
+1.  `moc` - CMD audio player.
 2. `rtorrent` - CLI torrent client.
 3. `p7zip unrar` - CLI archivers.
 4. `viewnior` - View images.
