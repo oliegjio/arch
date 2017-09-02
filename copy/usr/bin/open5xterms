@@ -3,10 +3,10 @@
 my_time=0.4
 
 com_1="vim"
-com_2=":"
+com_2="vifm"
 com_3=":"
-com_4="vifm"
-com_5="vifm"
+com_4=":"
+com_5=":"
 
 xterm -e "cd $1; $com_1; bash" &
 sleep $my_time

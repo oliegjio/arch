@@ -81,7 +81,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Misc Fixed-10'
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Lock screen
-bindsym $mod+z exec i3lock -d -c 303030 -e -f
+bindsym $mod+z exec i3lock --dpms --color=303030 -e -f -I 8 -n
 
 # change focus
 bindsym $mod+$left focus left

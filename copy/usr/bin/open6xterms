@@ -8,7 +8,6 @@ com_3=":"
 com_4=":"
 com_5=":"
 com_6=":"
-com_7=":"
 
 xterm -e "cd $1; $com_1; bash" &
 sleep $my_time
@@ -21,5 +20,3 @@ sleep $my_time
 xterm -e "cd $1; $com_5; bash" &
 sleep $my_time
 xterm -e "cd $1; $com_6; bash" &
-sleep $my_time
-xterm -e "cd $1; $com_7; bash" &
