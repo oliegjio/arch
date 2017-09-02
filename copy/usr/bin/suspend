@@ -1,3 +1,4 @@
 #!/bin/bash
 
-systemctl start systemd-suspend
+systemctl start systemd-hybrid-sleep
+#systemctl start systemd-suspend
