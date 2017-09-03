@@ -1,3 +1,14 @@
+# BLACK AND WHITE COLOR SHCEME:
+# class                 border  bground text    indicator child_border
+client.focused          #000000 #FFFFFF #000000 #000000   #000000
+client.focused_inactive #000000 #687175 #FFFFFF #000000   #000000
+client.unfocused        #000000 #222222 #888888 #000000   #000000
+client.urgent           #000000 #FFFFFF #000000 #000000   #000000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
+
+client.background       #FFFFFF
+
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -74,7 +85,8 @@ bindsym $mod+Return exec --no-startup-id xterm
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Misc Fixed-10'
+# bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Misc Fixed-10'
+bindsym $mod+d exec --no-startup-id dmenu_run -nf '#FFFFFF' -nb '#000000' -sb '#FFFFFF' -sf '#000000' -fn 'Misc Fixed-10'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -219,6 +231,17 @@ bindsym $mod+r mode "resize"
 bar {
         # status_command i3status
         status_command custom-i3status
+  colors {
+    background #000000
+    statusline #FFFFFF
+    separator  #666666
+
+    focused_workspace  #FFFFFF #4B4B4B #FFFFFF
+    active_workspace   #333333 #222222 #FFFFFF
+    inactive_workspace #333333 #222222 #888888
+    urgent_workspace   #3A3A3A #FFFFFF #000000
+    binding_mode       #2F343A #FFFFFF #000000
+  }
 }
 
 #######################################################################
