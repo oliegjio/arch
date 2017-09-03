@@ -8,8 +8,8 @@ do
         layout=$(xkblayout-state print %s | awk '{print toupper($0)}')
 	if [ "$isMicOn" ]; 
 	then
-		echo "Layout: $layout  |  Microphone is On  |  RAM Usage: $memUsage  | $line" || exit 1
+		echo "Layout: $layout  |  Microphone is On  |  RAM Usage: $memUsage  |  $line" || exit 1
 	else
-		echo "Layout: $layout  |  Microphone is Off  |  RAM Usage: $memUsage  | $line" || exit 1
+		echo "Layout: $layout  |  Microphone is Off  |  RAM Usage: $memUsage  |  $line" || exit 1
 	fi
 done
