@@ -107,6 +107,9 @@ menuentry "Windows" {
   
   `$UUID` can be found by executing: `blkid`.
 
+### Resize `/tmp` Until Next Boot:
+`mount -o remount,size=30G,noatime /tmp`.
+
 ### Write ISO to USB:
 `dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync`.
 
