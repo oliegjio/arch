@@ -1,3 +1,5 @@
+`find . -iname '*.cpp' -o -iname '*.h' | xargs sed -i 's/from/to/`
+
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
