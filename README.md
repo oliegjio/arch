@@ -1,5 +1,3 @@
-`find . -iname '*.cpp' -o -iname '*.h' | xargs sed -i 's/from/to/`
-
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
@@ -158,7 +156,7 @@ If module `pkg_resources` wasn't found, try to install: `sudo pacman -S python-s
 
 ### Animated Wallpapers:
 1. Install: `sudo pacman -S mpv`.
-2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Background/background.mp4`.
+2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Backgrounds/dynamic.mp4` or `mpv --no-audio --loop-playlist=inf --wid=0 ~/Backgrounds/dynamic.mp4`.
 3. Possibly add command above to `~/.config/i3/config` for autostart.
 
 ### Shortcuts:
