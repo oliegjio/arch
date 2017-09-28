@@ -1,0 +1,12 @@
+#!/bin/bash
+
+args_number=$#
+queries=$((args_number - 2))
+from=${@:(-2):1}
+to=${@:(-1):1}
+command="find . -type f -iname \""$1"\""
+for ((i=2; i<=$queries; i++)); do
+    command=$command" -o -iname \""${@:$i:1}"\""
+done
+command=$command" | xargs sed -i 's/"$from"/"$to"/'"
+eval $command
