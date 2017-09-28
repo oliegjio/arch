@@ -263,8 +263,6 @@ exec --no-startup-id xset s off
 exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id xset s off -dpms
 exec --no-startup-id amixer set Capture 100%
-# exec --no-startup-id mpv --no-audio --loop-playlist=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Backgrounds/dynamic.mp4
-# exec --no-startup-id mpv --no-audio --loop-playlist=inf --wid=0 ~/Backgrounds/dynamic.mp4
 exec --no-startup-id feh --bg-fill ~/Backgrounds/static.png
 exec --no-startup-id dunst
 exec --no-startup-id setxkbmap -option caps:none
