@@ -1,3 +1,9 @@
+### Shortcuts:
+
+#### rTorrent:
+1. `Ctrl-D` - Stop an active download or remove a stopped download.
+2. `Ctrl-S` - Start download. Runs hash first unless already done.
+
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
@@ -34,22 +40,10 @@
 19. `umount /mnt`.
 20. `reboot`.
 
-### Restore configurations:
-1. Clone this repository.
-2. Make all binaries executable and readable by the command: `sudo chmod uog+rx *` (while you are in the `copy/usr/bin/` directory).
-3. Copy all files and folder and preserve ownerships: `sudo cp -a * /` (while in the `copy/` directory).
-4. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
-
-Could try to copy with `rsync`, that excludes `.gitkeep`: `sudo rsync -a -C * /` (while in the `copy/` directory).
-
-### Install YAOURT:
-1. `git clone https://aur.archlinux.org/package-query`.
-2. `git clone https://aur.archlinux.org/yaourt`.
-3. And then cd to package-query and the yaourt directories and execute: `makepkg -sri`.
 ### Essential packages:
 `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop openbox`.
 
-AUR: `xkblayout-state dunstify i3lock-color-git`
+**AUR**: `xkblayout-state dunstify i3lock-color-git`
 
 ### Useful packages:
 1. `vlc` - Media player.
@@ -63,7 +57,20 @@ AUR: `xkblayout-state dunstify i3lock-color-git`
 8. `conky` - Shows system stats on the desktop.
 9. `dropbox` - (AUR) File sync.
 
+### Restore configurations:
+1. Clone this repository.
+2. Make all binaries executable and readable by the command: `sudo chmod uog+rx *` (while you are in the `copy/usr/bin/` directory).
+3. Copy all files and folder and preserve ownerships: `sudo cp -a * /` (while in the `copy/` directory).
+4. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
+
+Could try to copy with `rsync`, that excludes `.gitkeep`: `sudo rsync -a -C * /` (while in the `copy/` directory).
+
 ------
+
+### Install YAOURT:
+1. `git clone https://aur.archlinux.org/package-query`.
+2. `git clone https://aur.archlinux.org/yaourt`.
+3. And then cd to package-query and the yaourt directories and execute: `makepkg -sri`.
 
 ### Enable Screen Lock Before Sleep:
 `sudo systemctl enable i3lock-autorun.service`
@@ -160,8 +167,4 @@ If module `pkg_resources` wasn't found, try to install: `sudo pacman -S python-s
 2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Backgrounds/dynamic.mp4` or `mpv --no-audio --loop-playlist=inf --wid=0 ~/Backgrounds/dynamic.mp4`.
 3. Possibly add command above to `~/.config/i3/config` for autostart.
 
-### Shortcuts:
 
-#### rTorrent:
-1. `Ctrl-D` - Stop an active download or remove a stopped download.
-2. `Ctrl-S` - Start download. Runs hash first unless already done.
