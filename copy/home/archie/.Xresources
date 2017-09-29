@@ -4,4 +4,4 @@ XTerm.vt100.locale: true
 XTerm*utf8: 2
 XTerm*font:-misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 XTerm*selectToClipboard: true
-XTerm*colorMode: false
+! XTerm*colorMode: false
