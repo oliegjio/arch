@@ -30,8 +30,7 @@
     1. `rm /etc/localtime`.
     2. `ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime`.
 11. `echo arch > /etc/hostname`.
-12. `pacman -S grub os-prober`.
-12. If you use wireless connection, also run: `pacman -S dialog wpa_supplicant`.
+12. `pacman -S grub os-prober dialog wpa_supplicant`.
 13. `grub-install /dev/sda`.
 14. `os-prober`.
 15. `mkinitcpio -p linux`.
