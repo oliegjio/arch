@@ -43,7 +43,7 @@
 ### Essential packages:
 `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop openbox`.
 
-**AUR**: `xkblayout-state dunstify i3lock-color-git`
+*AUR*: `xkblayout-state dunstify i3lock-color-git`
 
 ### Useful packages:
 1. `vlc` - Media player.
