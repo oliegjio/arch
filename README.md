@@ -41,7 +41,7 @@
 20. `reboot`.
 
 ### Essential packages:
-Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop gvim vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick`.
+Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop gvim vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium`.
 
 Before *AUR* run: `sudo pacman -Rns i3lock`.
 
