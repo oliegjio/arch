@@ -119,6 +119,8 @@ menuentry "Windows" {
 2. Enable modules: `sudo modprobe -a vboxdrv`.
 3. Enable modules at startup: `sudo vim /etc/modules-load.d/virtualbox.conf`. Write down and save: `vboxdrv`.
 
+If `Error -610` occured, try: `sudo chown root:root /usr` and `sudo chown root:root /usr/lib`.
+
 ### LAMP Stack Installation:
 1. Install Apache: `sudo pacman -S apache`.
     1. Apache configuration file located in: `/etc/httpd/conf/httpd.conf`.
