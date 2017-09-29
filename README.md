@@ -159,3 +159,9 @@ If module `pkg_resources` wasn't found, try to install: `sudo pacman -S python-s
 1. Install: `sudo pacman -S mpv`.
 2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Backgrounds/dynamic.mp4` or `mpv --no-audio --loop-playlist=inf --wid=0 ~/Backgrounds/dynamic.mp4`.
 3. Possibly add command above to `~/.config/i3/config` for autostart.
+
+### Shortcuts:
+
+#### rTorrent:
+1. `Ctrl-D` - Stop an active download or remove a stopped download.
+2. `Ctrl-S` - Start download. Runs hash first unless already done.
