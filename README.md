@@ -40,7 +40,7 @@
 20. `reboot`.
 
 ### Essential packages:
-Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync`.
+Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion`.
 
 Before *AUR* run: `sudo pacman -Rns i3lock`.
 
@@ -59,6 +59,10 @@ Other packages: `npm python python2 python-pip python2-pip qt5`.
 3. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
 
 ------
+
+### Install Tor Browser:
+1. `gpg --keyserver pool.sks-keyservers.net --recv-keys 0x4E2C6E8793298290`.
+2. `yaourt -S tor-browser-en`.
 
 ### Install YAOURT:
 1. `git clone https://aur.archlinux.org/package-query`.
