@@ -41,22 +41,18 @@
 20. `reboot`.
 
 ### Essential packages:
-`xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop gvim`.
+Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop gvim vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick`.
 
-*AUR*: `xkblayout-state dunstify i3lock-color-git`
+Before *AUR* run: `sudo pacman -Rns i3lock`.
+
+*AUR*: `xkblayout-state dunstify i3lock-color-git dropbox`.
 
 ### Useful packages:
-1. `vlc` - Media player.
-1.  `moc` - CMD audio player.
-2. `rtorrent` - CLI torrent client.
-3. `p7zip unrar` - CLI archivers.
-4. `viewnior` - View images.
-5. `ffmpeg` - CLI video editor.
-6. `recordmydesktop` - (AUR) CLI screen recorder.
-7. `gpick` - Color picker.
-8. `conky` - Shows system stats on the desktop.
-9. `dropbox` - (AUR) Dropbox.
-10 `openbox` - Window DE.
+1. `recordmydesktop` - (AUR) CLI screen recorder.
+2. `conky` - Shows system stats on the desktop.
+3. `openbox` - Window DE.
+
+Other packages: `npm python python2 python-pip python2-pip qt5`.
 
 ### Restore configurations:
 1. Clone this repository.
