@@ -41,7 +41,7 @@
 20. `reboot`.
 
 ### Essential packages:
-`xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop openbox`.
+`xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop gvim`.
 
 *AUR*: `xkblayout-state dunstify i3lock-color-git`
 
@@ -55,7 +55,8 @@
 6. `recordmydesktop` - (AUR) CLI screen recorder.
 7. `gpick` - Color picker.
 8. `conky` - Shows system stats on the desktop.
-9. `dropbox` - (AUR) File sync.
+9. `dropbox` - (AUR) Dropbox.
+10 `openbox` - Window DE.
 
 ### Restore configurations:
 1. Clone this repository.
