@@ -123,7 +123,7 @@ menuentry "Windows" {
 `dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync`.
 
 ### Virtual Box Installation:
-1. `sudo pacman -S virtualbox`.
+1. `sudo pacman -S virtualbox linux-headers`.
 2. Enable modules: `sudo modprobe -a vboxdrv`.
 3. Enable modules at startup: `sudo vim /etc/modules-load.d/virtualbox.conf`. Write down and save: `vboxdrv`.
 
