@@ -16,6 +16,7 @@
 5. `mount /dev/sda3 /mnt`.
 5. If you have a wireless connection, run: `wifi-menu`.
 6. `pacstrap /mnt base base-devel`.
+18. `genfstab /mnt >> /mnt/etc/fstab`.
 7. `arch-chroot /mnt`.
 8. Creating default user:
     1. `passwd`.
@@ -36,7 +37,6 @@
 15. `mkinitcpio -p linux`.
 16. `grub-mkconfig -o /boot/grub/grub.cfg`.
 17. `exit`.
-18. `genfstab /mnt >> /mnt/etc/fstab`.
 19. `umount /mnt`.
 20. `reboot`.
 
