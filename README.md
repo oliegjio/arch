@@ -55,7 +55,7 @@ Other packages: `npm python python2 python-pip python2-pip qt5`.
 
 ### Restore configurations:
 1. Clone this repository.
-2. Copy all files and folder and preserve ownerships, excluding Git files: `sudo rsync -a -C * /` (while in the `copy/` directory).
+2. Copy all files and folder and preserve ownerships, excluding Git files: `sudo rsync -a -C --exclude=".gitkeep" * /` (while in the `copy/` directory).
 3. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
 
 ------
