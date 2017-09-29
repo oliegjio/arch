@@ -61,6 +61,7 @@ AUR: `xkblayout-state dunstify i3lock-color-git`
 6. `recordmydesktop` - (AUR) CLI screen recorder.
 7. `gpick` - Color picker.
 8. `conky` - Shows system stats on the desktop.
+9. `dropbox` - (AUR) File sync.
 
 ------
 
@@ -158,8 +159,3 @@ If module `pkg_resources` wasn't found, try to install: `sudo pacman -S python-s
 1. Install: `sudo pacman -S mpv`.
 2. Run: `mpv --no-audio --loop=inf --wid=0 --vo=opengl --hwdec=auto-copy ~/Backgrounds/dynamic.mp4` or `mpv --no-audio --loop-playlist=inf --wid=0 ~/Backgrounds/dynamic.mp4`.
 3. Possibly add command above to `~/.config/i3/config` for autostart.
-
-### Shortcuts:
-#### ViFM:
-1. `Ctrl+G` - Show detailed information about the file.
-2. `t` - Multi-select.
