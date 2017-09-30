@@ -40,13 +40,13 @@
 20. `reboot`.
 
 ### Essential packages:
-Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion`.
+Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget`.
 
 Before *AUR* run: `sudo pacman -Rns i3lock`.
 
 *AUR*: `xkblayout-state dunstify i3lock-color-git dropbox`.
 
-### Useful packages:
+### Other packages:
 1. `recordmydesktop` - (AUR) CLI screen recorder.
 2. `conky` - Shows system stats on the desktop.
 3. `openbox` - Window DE.
