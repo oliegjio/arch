@@ -6,12 +6,18 @@ if [ "$args_number" -lt "3" ]; then
     exit
 fi
 queries=$((args_number - 2))
-from=${@:(-2):1}
-to=${@:(-1):1}
-command="find . -type f -iname \""$1"\""
-for ((i=2; i<=$queries; i++)); do
-    command=$command" -o -iname \""${@:$i:1}"\""
+from="${@:(-2):1}"
+to="${@:(-1):1}"
+command="find . -type f -iname \"\""
+for ((i=1; i<=$queries; i++)); do
+    arg="${@:$i:1}"
+    first="${arg:0:1}"
+    if [ "$first" == "!"  ]; then
+        command="$command"" -not -path \"./"${arg:1}"\""
+    else
+        command="$command"" -o -iname \"""$arg""\""
+    fi
 done
 eval $command
-command=$command" | xargs sed -i 's/"$from"/"$to"/'"
+command="$command"" | xargs sed -i 's/""$from""/""$to""/'"
 eval $command
