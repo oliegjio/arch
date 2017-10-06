@@ -1,0 +1,19 @@
+#!/bin/bash
+
+i3-msg "workspace 2; append_layout /home/archie/.config/i3/workspace-atom-2.json"
+
+my_time=0.1
+
+com_1="vifm"
+com_2=":"
+com_3=":"
+com_4=":"
+
+atom $1 &
+xterm -e "cd $1; $com_1; bash" &
+sleep $my_time
+xterm -e "cd $1; $com_2 $1 $1; bash" &
+sleep $my_time
+xterm -e "cd $1; $com_3; bash" &
+sleep $my_time
+xterm -e "cd $1; $com_4; bash" &
