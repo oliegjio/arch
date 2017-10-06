@@ -10,9 +10,9 @@ com_3=":"
 com_4=":"
 
 atom $1 &
-xterm -e "cd $1; $com_1; bash" &
+xterm -e "cd $1; $com_1 $1 $1; bash" &
 sleep $my_time
-xterm -e "cd $1; $com_2 $1 $1; bash" &
+xterm -e "cd $1; $com_2; bash" &
 sleep $my_time
 xterm -e "cd $1; $com_3; bash" &
 sleep $my_time
