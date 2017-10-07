@@ -112,6 +112,9 @@ menuentry "Windows" {
   
   `$UUID` can be found by executing: `blkid`.
 
+### Restart ALSA:
+`alsactl kill rescan`.
+
 ### Resize `/tmp` Until Next Boot:
 `mount -o remount,size=30G,noatime /tmp`.
 
