@@ -156,10 +156,8 @@ If `Error -610` occured, try: `sudo chown root:root /usr` and `sudo chown root:r
 2. From GPT to MBR: `sudo sgdisk -m /dev/sda`.
 
 ### Removing Tags and Images from MP3:
-1. Install: `sudo packman -S python-eyed3 id3v2`.
+1. Install: `sudo packman -S python-setuptools python-eyed3 id3v2`.
 2. Execute: `id3v2 -D *.mp3 && eyeD3 --remove-all-images * *.mp3`.
-
-If module `pkg_resources` wasn't found, try to install: `sudo pacman -S python-setuptools`.
 
 ### Animated Wallpapers:
 1. Install: `sudo pacman -S mpv`.
