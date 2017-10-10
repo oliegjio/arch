@@ -112,6 +112,11 @@ menuentry "Windows" {
   
   `$UUID` can be found by executing: `blkid`.
 
+### Change Default Shell:
+1. List all installed shells: `chsh -l`.
+2. Change shell: `chsh -s <path>`.
+3. Reboot.
+
 ### Restart ALSA:
 `alsactl kill rescan`.
 
