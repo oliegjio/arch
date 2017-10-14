@@ -133,6 +133,8 @@ menuentry "Windows" {
 
 If `Error -610` occured, try: `sudo chown root:root /usr` and `sudo chown root:root /usr/lib`.
 
+Connect USB to VirtualBox Machine: `sudo gpasswd -a archie vboxusers` and restart.
+
 ### LAMP Stack Installation:
 1. Install Apache: `sudo pacman -S apache`.
     1. Apache configuration file located in: `/etc/httpd/conf/httpd.conf`.
