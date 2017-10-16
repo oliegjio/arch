@@ -123,6 +123,9 @@ menuentry "Windows" {
 ### Resize `/tmp` Until Next Boot:
 `mount -o remount,size=30G,noatime /tmp`.
 
+### Haskell Installation:
+Install packages: `ghc ghc-static cabal-install stack haskell-haddock-library alex happy`.
+
 ### Write ISO to USB:
 `dd bs=4M if=/path/to/image.iso of=/dev/sdx status=progress && sync`.
 
