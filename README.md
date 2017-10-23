@@ -136,6 +136,11 @@ Install packages: `ghc ghc-static cabal-install stack haskell-haddock-library al
 
 If `Error -610` occured, try: `sudo chown root:root /usr` and `sudo chown root:root /usr/lib`.
 
+**Enable USB Support:**
+1. Install extensions: `yaourt -S virtualbox-ext-oracle`.
+2. Add yourself to VirtualBox group: `sudo gpasswd -a archie vboxusers`.
+3. Open VirtualBox and shutdown all machines. Got to: Machine > Settings > USB and enable USB 3.0 or 2.0 support. Add new filter for your USB flash.
+
 Connect USB to VirtualBox Machine: `sudo gpasswd -a archie vboxusers` and restart.
 
 ### LAMP Stack Installation:
