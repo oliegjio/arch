@@ -143,6 +143,19 @@ If `Error -610` occured, try: `sudo chown root:root /usr` and `sudo chown root:r
 
 **Install Guest Additions:** Click on: Devices > Insert Guest Additions... Install guest additions on virtual OS.
 
+### Edit CMake Config:
+1. `ccmake <project_folder>`.
+2. Press `c` to start configuring.
+3. As you finish press `g` to generate makefile.
+
+### Compile C Program:
+Using 4 cores: `make -j4`.
+
+### Setup Static IP:
+1. Copy example from `/etc/netctl/examples` to `/etc/netctl` (for example `ethernet-static`).
+2. Rename this copied file to interface name, founded by executing: `ip link` (for example `enp0s31f6`).
+3. Configure this file as you needed.
+
 ### LAMP Stack Installation:
 1. Install Apache: `sudo pacman -S apache`.
     1. Apache configuration file located in: `/etc/httpd/conf/httpd.conf`.
