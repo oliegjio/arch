@@ -1,12 +1,12 @@
 # BLACK AND WHITE COLOR SHCEME:
 # class                 border  bground text    indicator child_border
-client.focused          #000000 #FFFFFF #000000 #000000   #000000
-client.focused_inactive #000000 #666666 #FFFFFF #000000   #000000
-client.unfocused        #000000 #000000 #888888 #000000   #000000
-client.urgent           #000000 #FFFFFF #000000 #000000   #000000
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
+# client.focused          #000000 #FFFFFF #000000 #000000   #000000
+# client.focused_inactive #000000 #666666 #FFFFFF #000000   #000000
+# client.unfocused        #000000 #000000 #888888 #000000   #000000
+# client.urgent           #000000 #FFFFFF #000000 #000000   #000000
+# client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
 
-client.background       #FFFFFF
+# client.background       #FFFFFF
 
 
 # i3 config file (v4)
@@ -93,8 +93,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run -nf '#FFFFFF' -nb '#000000' -sb '#
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Lock screen
-# bindsym $mod+z exec i3lock --color=303030 -e -f
-bindsym $mod+z exec i3lock --timepos="50:70" --wrongtext="Wrong!" --veriftext="Verifying…" --datesize=24 --datecolor=ffffffff --timesize=64 --timecolor=ffffffff -k --bshlcolor=808080ff --keyhlcolor=ffffffff --textcolor=ffffffff --separatorcolor=ffffffff --ringcolor=202020ff --ringwrongcolor=303030ff --ringvercolor=303030ff --insidecolor=000000ff --insidevercolor=000000ff --insidewrongcolor=000000ff --linecolor=ffffffff --color=303030 -e -f
+bindsym $mod+z exec i3lock --color=303030 -e -f
+# bindsym $mod+z exec i3lock --timepos="50:70" --wrongtext="Wrong!" --veriftext="Verifying…" --datesize=24 --datecolor=ffffffff --timesize=64 --timecolor=ffffffff -k --bshlcolor=808080ff --keyhlcolor=ffffffff --textcolor=ffffffff --separatorcolor=ffffffff --ringcolor=202020ff --ringwrongcolor=303030ff --ringvercolor=303030ff --insidecolor=000000ff --insidevercolor=000000ff --insidewrongcolor=000000ff --linecolor=ffffffff --color=303030 -e -f
 
 # change focus
 bindsym $mod+$left focus left
