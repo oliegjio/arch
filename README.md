@@ -4,6 +4,12 @@
 1. `Ctrl-D` - Stop an active download or remove a stopped download.
 2. `Ctrl-S` - Start download. Runs hash first unless already done.
 
+#### MOC:
+1. `X` - Toggle AutoNext option.
+2. `R` - Toggle repeat.
+3. `n` - play next track.
+4. `b` - play previous track.
+
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
