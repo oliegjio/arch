@@ -10,6 +10,14 @@
 3. `n` - play next track.
 4. `b` - play previous track.
 
+#### TMux:
+1. `Ctrl + b` + `c` - Create a new window.
+2. `Ctrl + b` + `p` / `n` - Previous/next window.
+3. `Ctrl + b` + `%` / `"` - Split vertically/horizontally.
+4. `Ctrl + b` + <arrow_key> - Move between panes.
+5. `Ctrl + b` + `x` - Close current pane.
+6. `Ctrl + b` + `&` - Close current window.
+
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
