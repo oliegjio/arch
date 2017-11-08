@@ -17,6 +17,7 @@
 4. `Ctrl + b` + <arrow_key> - Move between panes.
 5. `Ctrl + b` + `x` - Close current pane.
 6. `Ctrl + b` + `&` - Close current window.
+7. `Ctrl + b` + `[` - Scroll mode (Arrow keys to scroll and `q` to exit scroll mode).
 
 ### Install Arch Linux:
 1. `fdisk -l`.
