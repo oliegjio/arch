@@ -45,9 +45,9 @@
     1. `rm /etc/localtime`.
     2. `ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime`.
 11. `echo arch > /etc/hostname`.
-12. `pacman -S grub os-prober dialog wpa_supplicant`.
+12. `pacman -S grub dialog wpa_supplicant`.
+12. If dual boot, run: `pacman -S os-prober && os-prober`.
 13. `grub-install /dev/sda`.
-14. `os-prober`.
 15. `mkinitcpio -p linux`.
 16. `grub-mkconfig -o /boot/grub/grub.cfg`.
 17. `exit`.
@@ -55,18 +55,16 @@
 20. `reboot`.
 
 ### Essential packages:
-Packages: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr`.
+Official: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr`.
 
-*AUR*: `xkblayout-state dunstify dropbox`.
-
-*Unused AUR*: `i3lock-color-git`.
+*AUR*: `xkblayout-state dunstify dropbox i3lock-color-git`.
 
 ### Other packages:
 1. `recordmydesktop` - (AUR) CLI screen recorder.
 2. `conky` - Shows system stats on the desktop.
 3. `openbox` - Window DE.
 
-Other packages: `npm python python2 python-pip python2-pip qt5`.
+`npm python python2 python-pip python2-pip qt5`.
 
 ### Restore configurations:
 1. Clone this repository.
