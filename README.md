@@ -41,7 +41,6 @@
 9. Set locales:
     1. `nano /etc/locale.gen` and uncomment two lines with "en_US" in the beginning.
     2. `locale-gen`.
-10. Set time zone: `timedatectl set-timezone Europe/Moscow`.
 11. `echo arch > /etc/hostname`.
 12. `pacman -S grub dialog wpa_supplicant`.
 12. If you use dual boot, run: `pacman -S os-prober && os-prober`.
