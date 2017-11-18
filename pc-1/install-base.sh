@@ -1,6 +1,6 @@
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-$DIR/partitions.sh
+cd $DIR && ./partitions.sh
 
 pacstrap /mnt base base-devel
 
