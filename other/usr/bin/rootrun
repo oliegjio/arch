@@ -1,6 +1,0 @@
-#!/bin/bash
-cat > /bin/r$1 << EOF
-#!/bin/bash
-gksudo -k -u root $1
-EOF
-chmod o+x /bin/r$1
