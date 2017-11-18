@@ -38,7 +38,7 @@
 #keystate_scrolllock= enable
 
 # Toggle Micro
-"amixer set 'Capture',0 toggle && microphone-toggle-notify"
+"amixer set 'Capture',0 toggle && microphone-notify"
   Pause
 
 # Screenshot Fullscreen
@@ -51,23 +51,23 @@
   # Mod2 + Print
 
 # Increase Volume
-"amixer -c 0 sset Master 3%+ && speaker-volume-notify"
+"amixer -c 0 sset Master 3%+ && speakers-notify"
   XF86AudioRaiseVolume
 
 # Decrease Volume
-"amixer -c 0 sset Master 3%- && speaker-volume-notify"
+"amixer -c 0 sset Master 3%- && speakers-notify"
   XF86AudioLowerVolume
 
 # Disable volume
-"toggle-speaker"
+"speakers-toggle"
   XF86AudioMute
 
 # Increase Brightness
-"increase-brightness"
+"brightness-increase"
   XF86MonBrightnessUp
 
 # Decrease Brightness
-"decrease-brightness"
+"brightness-decrease"
   XF86MonBrightnessDown
 
 ##################################

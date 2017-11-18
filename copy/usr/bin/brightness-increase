@@ -8,7 +8,7 @@ new=$((current+step))
 
 if [ "$new" -le "$max" ]; then
     tee $path/brightness <<< $new
-    brightness-level-notify
+    brightness-notify
 else
-    brightness-level-notify
+    brightness-notify
 fi
