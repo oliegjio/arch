@@ -1,8 +1,4 @@
-if [ "$1" == "pc-1"  ]; then
-  cd "pc-1" && ./partition.sh
-fi
-
-cd ..
+./partitions.sh
 
 pacstrap /mnt base base-devel
 
@@ -12,10 +8,10 @@ arch-chroot /mnt
 
 timedatectl set-timezone Europe/Moscow
 
-echo -e "asdf" | passwd 
+chpasswd <<< "root:asdf"
 
 useradd -m -G wheel archie
-echo -e "asdf" | passwd archie
+chpasswd <<< "archie:asdf"
 echo "archie ALL=(ALL) ALL" >> /etc/sudoers
 
 echo archie > /etc/hostname
