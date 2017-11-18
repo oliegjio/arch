@@ -1,76 +1,25 @@
-
-###########################
-# xbindkeys configuration #
-###########################
-#
-# Version: 1.8.6
-#
-# If you edit this file, do not forget to uncomment any lines
-# that you change.
-# The pound(#) symbol may be used anywhere for comments.
-#
-# To specify a key, you can use 'xbindkeys --key' or
-# 'xbindkeys --multikey' and put one of the two lines in this file.
-#
-# The format of a command line is:
-#    "command to start"
-#       associated key
-#
-#
-# A list of keys is in /usr/include/X11/keysym.h and in
-# /usr/include/X11/keysymdef.h
-# The XK_ is not needed.
-#
-# List of modifier:
-#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
-#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
-#
-
-# The release modifier is not a standard X modifier, but you can
-# use it if you want to catch release events instead of press events
-
-# By defaults, xbindkeys does not pay attention with the modifiers
-# NumLock, CapsLock and ScrollLock.
-# Uncomment the lines above if you want to pay attention to them.
-
-#keystate_numlock = enable
-#keystate_capslock = enable
-#keystate_scrolllock= enable
-
-# Toggle Micro
 "amixer set 'Capture',0 toggle && microphone-notify"
   Pause
 
-# Screenshot Fullscreen
 "sleep 0.1 && scrot '%S%M%H%d%m%Y.png' -b -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
   m:0x10 + c:78
   Mod2 + Scroll_Lock
 
-# Screenshot Region
 "sleep 0.1 && scrot '%S%M%H%d%m%Y.png' -b -s -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
   m:0x10 + c:107
   Mod2 + Print
 
-# Increase Volume
 "amixer -c 0 sset Master 3%+ && speakers-notify"
   XF86AudioRaiseVolume
 
-# Decrease Volume
 "amixer -c 0 sset Master 3%- && speakers-notify"
   XF86AudioLowerVolume
 
-# Disable volume
 "speakers-toggle"
   XF86AudioMute
 
-# Increase Brightness
 "brightness-increase"
   XF86MonBrightnessUp
 
-# Decrease Brightness
 "brightness-decrease"
   XF86MonBrightnessDown
-
-##################################
-# End of xbindkeys configuration #
-##################################
