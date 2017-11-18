@@ -1,31 +1,15 @@
-#!/bin/bash
-
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-cd $DIR
+cd $DIR && ./partitions.sh
 
-pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu
+pacstrap /mnt base base-devel
 
-git clone --recursive https://github.com/oliegjio/vim
-git clone https://aur.archlinux.org/yaourt
-git clone https://aur.archlinux.org/package-query
+genfstab /mnt >> /mnt/etc/fstab
 
-cd $DIR/package-query
-makepkg -sri --noconfirm
+cp $DIR/nomad.sh /mnt/
 
-cd $DIR/yaourt
-makepkg -sri --noconfirm
+arch-chroot /mnt ./nomad.sh
 
-pacman -Rns --noconfirm i3lock
-su -c "yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git" archie
-
-cd $DIR/configs
-rsync -a -C --exclude=".gitkeep" * /
-
-cd $DIR/../general
-rsync -a -C --exclude=".gitkeep" * /
-
-cd $DIR/vim/vim80
-./install.sh
+umount /mnt
 
 reboot

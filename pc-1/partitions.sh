@@ -1,4 +1,4 @@
-sfdisk /dev/sda < table.txt
+sfdisk /dev/sda < partitions.table
 
 mkfs.ext4 -F /dev/sda2
 

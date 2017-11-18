@@ -1,3 +1,7 @@
+###
+# BASE INSTALLATION:
+###
+
 chpasswd <<< "root:asdf"
 
 useradd -m -G wheel archie
@@ -20,9 +24,50 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable dhcpcd
 
-mkdir -p /home/archie/Git
+###
+# USER ENVIRONMENT INSTALLATION:
+###
+
+pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu
+pacman -Rns --noconfirm i3lock
+
+su -c "\
+mkdir -p /home/archie/Git; \
+cd /home/archie/Git; \
+
+git clone https://github.com/oliegjio/arch-linux; \
+git clone --recursive https://github.com/oliegjio/vim; \
+git clone https://aur.archlinux.org/yaourt; \
+git clone https://aur.archlinux.org/package-query; \
+
+cd package-query; \
+makepkg -sri --noconfirm; \
+cd ..; \
+
+cd yaourt; \
+makepkg -sri --noconfirm; \
+cd ..; \
+
+yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git; \
+" archie
+
 cd /home/archie/Git
-su -c "git clone https://github.com/oliegjio/arch-linux" archie
+
+cd arch-linux/pc-1/configs
+rsync -a -C --exclude=".gitkeep" * /
+cd ../../..
+
+cd arch-linux/general
+rsync -a -C --exclude=".gitkeep" * /
+cd ../..
+
+cd vim/vim80
+./install.sh
+cd ../..
+
+###
+# FINISHING:
+###
 
 rm $0
 
