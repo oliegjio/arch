@@ -38,15 +38,13 @@
     2. `useradd -m -G wheel archie`.
     3. `passwd archie`.
     4. `nano /etc/sudoers` and add: `archie ALL=(ALL) ALL`.
-9. Configure locales:
+9. Set locales:
     1. `nano /etc/locale.gen` and uncomment two lines with "en_US" in the beginning.
     2. `locale-gen`.
-10. Configure time zone:
-    1. `rm /etc/localtime`.
-    2. `ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime`.
+10. Set time zone: `timedatectl set-timezone Europe/Moscow`.
 11. `echo arch > /etc/hostname`.
 12. `pacman -S grub dialog wpa_supplicant`.
-12. If dual boot, run: `pacman -S os-prober && os-prober`.
+12. If you use dual boot, run: `pacman -S os-prober && os-prober`.
 13. `grub-install /dev/sda`.
 15. `mkinitcpio -p linux`.
 16. `grub-mkconfig -o /boot/grub/grub.cfg`.
@@ -55,21 +53,14 @@
 20. `reboot`.
 
 ### Essential packages:
-Official: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr`.
+Official: `xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu`.
 
 *AUR*: `xkblayout-state dunstify dropbox i3lock-color-git`.
 
-### Other packages:
+### Semiuseful packages:
 1. `recordmydesktop` - (AUR) CLI screen recorder.
 2. `conky` - Shows system stats on the desktop.
 3. `openbox` - Window DE.
-
-`npm python python2 python-pip python2-pip qt5`.
-
-### Restore configurations:
-1. Clone this repository.
-2. Copy all files and folder and preserve ownerships, excluding Git files: `sudo rsync -a -C --exclude=".gitkeep" * /` (while in the `copy/` directory).
-3. Configure this files as needed: `~/.xbindkeys`, `~/.i3status.conf`.
 
 ------
 
