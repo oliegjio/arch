@@ -1,0 +1,10 @@
+#!/bin/bash
+
+git status
+git add .
+if [ ! -z "$1" ]; then
+  git commit -m $1
+else
+  git commit -m "Commit"
+fi
+git push
