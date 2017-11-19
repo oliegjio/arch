@@ -22,11 +22,29 @@
 #### ViFM:
 1. `t` - Multiselect files.
 2. `,t` - Opens console in current directory.
+3. `V` - Visual mode.
 
 *Commands:*
 1. `%c:p` - File path with file name under cursor.
 2. `%c` - File name under cursor.
 3. `%d` (`%D`) - Current directory path (other pane directory).
+
+#### Ranger:
+1. `S` - Open terminal in current window.
+2. `i` - Inspect the current file in a bigger window.
+3. `yy` - Copy selected files.
+4. `dd` - Cut selected files.
+5. `pp` - Paste files.
+6. `Ctrl-v` - Visual mode.
+7. `uV` / `uv` - Reverse visual mode / clear selection.
+8. `v` - Select all files in the directory.
+9. `f` - Quickly navigate to file.
+10. `r` - Open as.
+11. `!` - Run shell commands.
+12. `Ctrl-n` - New tab.
+13. `Ctrl-w` / `Tab` / `Shift-Tab` - Close tab / next tab / previous tab.
+
+Ranger allows you to use mouse!
 
 ### Install Arch Linux:
 1. `fdisk -l`.
