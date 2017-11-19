@@ -16,7 +16,7 @@ echo archie > /etc/hostname
 sed -i '/^#.*en_US/s/^#//' /etc/locale.gen
 locale-gen
 
-pacman -S --noconfirm grub wpa_supplicant dialog git
+pacman -S --noconfirm grub wpa_supplicant dialog
 
 disk="$(df . | tail -n1 | awk '{print $1}')"
 disk=${disk%?}
@@ -32,6 +32,7 @@ systemctl enable dhcpcd
 ###
 
 pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu
+pacman -S --noconfirm nodejs python python-pip python2 python2-pip atom
 pacman -Rns --noconfirm i3lock
 
 su -c "\
@@ -39,6 +40,8 @@ mkdir -p /home/archie/Git; \
 cd /home/archie/Git; \
 
 git clone https://github.com/oliegjio/arch-linux; \
+git clone https://github.com/oliegjio/sublime-text-3; \
+git clone https://github.com/oliegjio/atom; \
 git clone --recursive https://github.com/oliegjio/vim-arch-linux; \
 git clone https://aur.archlinux.org/yaourt; \
 git clone https://aur.archlinux.org/package-query; \
@@ -51,7 +54,16 @@ cd yaourt; \
 makepkg -sri --noconfirm; \
 cd ..; \
 
-yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git; \
+yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git sublime-text-dev; \
+
+cd sublime-text-3/configs; \
+cp * /home/archie/.config/sublime-text-3/Packages/User/; \
+cd ../..; \
+
+cd atom/configs; \
+cp * /home/archie/.atom/; \
+apm install --packages-file /home/archie/.atom/packages.list; \
+cd ../..; \
 " archie
 
 cd /home/archie/Git
