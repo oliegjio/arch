@@ -56,7 +56,11 @@ cd ..; \
 
 yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git sublime-text-dev; \
 
-cd sublime-text-3/configs; \
+mkdir -p '/home/archie/.config/sublime-text-3/Installed Packages/'; \
+cd '/home/archie/.config/sublime-text-3/Installed Packages/'; \
+wget https://packagecontrol.io/Package%20Control.sublime-package; \
+mkdir -p /home/archie/.config/sublime-text-3/Packages/User/; \
+cd /home/archie/Git/sublime-text-3/configs; \
 cp * /home/archie/.config/sublime-text-3/Packages/User/; \
 cd ../..; \
 
