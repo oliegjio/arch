@@ -89,9 +89,6 @@ cd ..
 
 rm -rf /home/archie/Git/yaourt
 rm -rf /home/archie/Git/package-query
-rm -rf /home/archie/Git/atom
-rm -rf /home/archie/Git/sublime-text-3
-rm -rf /home/archie/Git/vim-arch-linux
 
 rm $0
 
