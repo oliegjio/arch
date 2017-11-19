@@ -7,6 +7,7 @@ chpasswd <<< "root:asdf"
 useradd -m -G wheel archie
 chpasswd <<< "archie:asdf"
 echo "archie ALL=(ALL) ALL" >> /etc/sudoers
+
 echo "Cmnd_Alias PACMAN = /usr/bin/pacman, /usr/bin/yaourt" >> /etc/sudoers
 echo "%wheel ALL=(ALL) NOPASSWD: PACMAN" >> /etc/sudoers
 
@@ -38,7 +39,7 @@ mkdir -p /home/archie/Git; \
 cd /home/archie/Git; \
 
 git clone https://github.com/oliegjio/arch-linux; \
-git clone --recursive https://github.com/oliegjio/vim; \
+git clone --recursive https://github.com/oliegjio/vim-arch-linux; \
 git clone https://aur.archlinux.org/yaourt; \
 git clone https://aur.archlinux.org/package-query; \
 
@@ -63,13 +64,16 @@ cd arch-linux/general
 rsync -a -C --exclude=".gitkeep" * /
 cd ../..
 
-cd vim/vim80
+cd vim-arch-linux
 ./install.sh
-cd ../..
+cd ..
 
 ###
 # FINISHING:
 ###
+
+rm -rf /home/archie/Git/yaourt
+rm -rf /home/archie/Git/package-query
 
 rm $0
 
