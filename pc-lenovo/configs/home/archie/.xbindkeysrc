@@ -1,0 +1,19 @@
+"amixer set 'Capture',0 toggle && microphone-notify"
+  Pause
+
+"sleep 0.1 && scrot '%S%M%H%d%m%Y.png' -b -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
+  m:0x10 + c:78
+  Mod2 + Scroll_Lock
+
+"sleep 0.1 && scrot '%S%M%H%d%m%Y.png' -b -s -z -e 'mv $f /home/archie/Screenshots/ && xclip -selection clipboard -t image/png -i /home/archie/Screenshots/$f && xclip -selection primary -t image/png -i /home/archie/Screenshots/$f && xclip -selection secondary -t image/png -i /home/archie/Screenshots/$f'"
+  m:0x10 + c:107
+  Mod2 + Print
+
+"amixer -c 0 sset Master 3%+ && speakers-notify"
+  XF86AudioRaiseVolume
+
+"amixer -c 0 sset Master 3%- && speakers-notify"
+  XF86AudioLowerVolume
+
+"speakers-toggle"
+  XF86AudioMute
