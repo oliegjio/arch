@@ -7,6 +7,8 @@ chpasswd <<< "root:asdf"
 useradd -m -G wheel archie
 chpasswd <<< "archie:asdf"
 echo "archie ALL=(ALL) ALL" >> /etc/sudoers
+echo "Cmnd_Alias PACMAN = /usr/bin/pacman, /usr/bin/yaourt" >> /etc/sudoers
+echo "%wheel ALL=(ALL) NOPASSWD: PACMAN" >> /etc/sudoers
 
 echo archie > /etc/hostname
 
