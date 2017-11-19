@@ -19,6 +19,15 @@
 6. `Ctrl + b` + `&` - Close current window.
 7. `Ctrl + b` + `[` - Scroll mode (Arrow keys to scroll and `q` to exit scroll mode).
 
+#### ViFM:
+1. `t` - Multiselect files.
+2. `,t` - Opens console in current directory.
+
+*Commands:*
+1. `%c:p` - File path with file name under cursor.
+2. `%c` - File name under cursor.
+3. `%d` (`%D`) - Current directory path (other pane directory).
+
 ### Install Arch Linux:
 1. `fdisk -l`.
 2. `cfdisk /dev/sda`.
