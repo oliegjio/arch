@@ -1,33 +1,32 @@
-#!/bin/bash
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot gksu dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu
+###
+# PARTITIONING:
+###
 
-git clone --recursive https://github.com/oliegjio/vim
-git clone https://aur.archlinux.org/yaourt
-git clone https://aur.archlinux.org/package-query
+cd $DIR
 
-cd package-query
-makepkg -sri --noconfirm
+sfdisk /dev/sda < partitions.table
 
-cd ../yaourt
-makepkg -sri --noconfirm
+mkfs.ext4 -F /dev/sda2
 
-cd ..
+mkswap /dev/sda1
+swapon /dev/sda1
 
-pacman -Rns --noconfirm i3lock
-su -c "yaourt -S --noconfirm xkblayout-state dunstify dropbox i3lock-color-git" archie
+mount /dev/sda2 /mnt
 
-cd configs
-rsync -a -C --exclude=".gitkeep" * /
+###
+# SYSTEM INSTALLATION:
+###
 
-cd ../../general
-rsync -a -C --exclude=".gitkeep" * /
+pacstrap /mnt base base-devel
 
-cd ../laptop-1/vim/vim80
-./install.sh
+genfstab /mnt >> /mnt/etc/fstab
 
-systemctl enable i3lock-on-sleep.service
+cp $DIR/nomad.sh /mnt/
 
-chmod uog+rwx -R /sys/class/backlight/intel_backlight
+arch-chroot /mnt ./nomad.sh
+
+umount /mnt
 
 reboot
