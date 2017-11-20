@@ -127,7 +127,8 @@ If `/etc/zoneinfo` was removed, refresh it with: `ln -s /usr/share/zoneinfo/Euro
 3. Change default boot entry (starts from 0): `sudo grub-set-default 2`.
 
 ### Add to PATH:
-`export PATH=$PATH:<new_path>`.
+1. Add to `~/.bashrc`: `export PATH=$PATH:<new_path>`.
+2. To refresh environment variables in current terminal, run: `source ~/.bashrc`.
 
 ### If OS-Prober Didn't Help:
 This solution is for BIOS-MBR installation. Open `/boot/grub/grub.cfg` and add:
