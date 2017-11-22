@@ -23,3 +23,5 @@ refresh =  r
 search_menu             = /
 next_search =   n
 cancel =  ESCAPE
+
+plist_add_stream = 
