@@ -88,7 +88,7 @@
 
 # Set playback toggles.
 Repeat = yes
-#Shuffle = no
+Shuffle = no
 AutoNext = no
 
 # Default FormatString:
@@ -180,7 +180,7 @@ AutoNext = no
 #Equalizer_SaveState = yes
 
 # Show files with dot at the beginning?
-#ShowHiddenFiles = no
+ShowHiddenFiles = yes
 
 # Hide file name extensions?
 #HideFileExtension = no
@@ -281,7 +281,7 @@ Theme = black_theme
 #
 # Example:    Keymap = my_keymap
 #
-#Keymap =
+Keymap = keymap
 
 # Use ASCII rather than graphic characters for drawing lines.  This
 # helps on some terminals.
@@ -477,8 +477,8 @@ Theme = black_theme
 #             and the directory menu at the bottom.  Playlist will
 #             occupy 10 lines and the directory menu the rest.
 #
-#Layout1 = directory(0,0,50%,100%):playlist(50%,0,FILL,100%)
-#Layout2 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
+Layout1 = directory(0,0,100%,100%):playlist(0,0,100%,100%)
+Layout2 = directory(0,0,50%,100%):playlist(50%,0,FILL,100%)
 #Layout3 = ""
 
 # When the song changes, should the menu be scrolled so that the currently
