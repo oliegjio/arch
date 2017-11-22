@@ -30,7 +30,7 @@ systemctl enable dhcpcd
 # USER ENVIRONMENT INSTALLATION:
 ###
 
-pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu ranger
+pacman -S --noconfirm xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot dunst alsa-utils vifm xorg-xprop vlc moc rtorrent p7zip unrar viewnior ffmpeg gpick chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu ranger calcurse
 pacman -S --noconfirm nodejs python python-pip python2 python2-pip qt4 atom gimp
 pacman -Rns --noconfirm i3lock
 
