@@ -44,6 +44,12 @@
 12. `Ctrl-n` - New tab.
 13. `Ctrl-w` / `Tab` / `Shift-Tab` - Close tab / next tab / previous tab.
 
+*Commands:*
+1. `%s` - The selected files in the current directory.
+2. `%d` - The path of the current directory.
+3. `%p` - The full path of selected files.
+4. `%f` - The name of selected file.
+
 Ranger allows you to use mouse!
 
 ### Install Arch Linux:
