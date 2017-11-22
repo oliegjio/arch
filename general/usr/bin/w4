@@ -15,4 +15,4 @@ xterm -e "cd ~; $com_2; bash" &
 sleep $my_time
 xterm -e "cd ~; $com_3; bash" &
 sleep $my_time
-xterm -e "cd ~; $com_4; bash" &
+xterm -e "cd ~/Music; $com_4 ~/Music; bash" &
