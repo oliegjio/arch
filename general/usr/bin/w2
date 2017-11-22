@@ -5,7 +5,7 @@ i3-msg "workspace 2; append_layout /home/archie/.config/i3/workspace-2.json"
 my_time=0.1
 
 com_1="vim"
-com_2="vifm"
+com_2="ranger"
 com_3=":"
 com_4=":"
 com_5=":"
