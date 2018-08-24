@@ -1,0 +1,6 @@
+[submodule "profiles/hp-hq-tre-71025/home/archie/.config/sublime-text-3"]
+	path = profiles/hp-hq-tre-71025/home/archie/.config/sublime-text-3
+	url = https://github.com/oliegjio/sublime-text-3
+[submodule "profiles/hp-hq-tre-71025/home/archie/.atom"]
+	path = profiles/hp-hq-tre-71025/home/archie/.atom
+	url = https://github.com/oliegjio/atom
