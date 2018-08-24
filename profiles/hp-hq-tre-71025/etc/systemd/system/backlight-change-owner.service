@@ -1,5 +1,5 @@
 [Unit]
-Description=Change the owner of intel_backlight
+Description=Change the owner of intel_backlight directory
 After=network.target
 
 [Service]

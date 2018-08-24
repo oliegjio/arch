@@ -1,7 +1,7 @@
 #!/bin/bash
 
 isMicrophoneOn="$(amixer get 'Capture',0 | grep '\[on\]')"
-#if [amixer get 'Capture',0 | grep "\[on\]"]
+
 if [ "$isMicrophoneOn" ];
 then
     dunstify -r 1 -t 1000 "Microphone On" -h string:bgcolor:#00cc00 -h string:fgcolor:#000000
