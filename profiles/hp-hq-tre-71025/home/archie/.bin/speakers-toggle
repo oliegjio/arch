@@ -5,8 +5,8 @@ path=/tmp/last-speaker-volume
 last=$(<$path)
 
 if [ "$speakerVolume" = "0%" ]; then
-    amixer -c 0 sset Master $last && speaker-volume-notify
+    amixer -c 0 sset Master $last && speakers-notify
 else
     echo $speakerVolume > $path
-    amixer -c 0 sset Master 0% && speaker-volume-notify
+    amixer -c 0 sset Master 0% && speakers-notify
 fi
