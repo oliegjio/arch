@@ -5,5 +5,5 @@
 	path = profiles/hp-hq-tre-71025/home/archie/.atom
 	url = https://github.com/oliegjio/atom
 [submodule "profiles/hp-hq-tre-71025/home/archie/.config/emacs"]
-	path = profiles/hp-hq-tre-71025/home/archie/.config/emacs
+	path = profiles/hp-hq-tre-71025/home/archie/.config/.emacs.rc
 	url = https://github.com/oliegjio/emacs
