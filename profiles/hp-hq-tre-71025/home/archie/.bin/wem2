@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i3-msg "workspace 2; append_layout /home/archie/.config/i3/workspace-emacs-2.json"
+i3-msg "workspace 2; append_layout /home/archie/.config/i3/workspace-emp-2.json"
 
 my_time=0.1
 
@@ -9,7 +9,7 @@ com_2=":"
 com_3=":"
 com_4=":"
 
-emacs $1 &
+emp $1 &
 xterm -e "cd $1; $com_1 $1 $1; bash" &
 sleep $my_time
 xterm -e "cd $1; $com_2; bash" &
