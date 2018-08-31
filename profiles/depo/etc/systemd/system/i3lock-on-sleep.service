@@ -1,0 +1,12 @@
+[Unit]
+Description=Lock screen before suspend
+Before=sleep.target
+
+[Service]
+User=archie
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/home/archie/.bin/i3lock-custom
+
+[Install]
+WantedBy=sleep.target

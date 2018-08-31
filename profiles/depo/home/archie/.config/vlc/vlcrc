@@ -1,0 +1,13 @@
+[qt] # Qt interface
+qt-privacy-ask=0
+
+[skins2] # Skinnable Interface
+skins2-last=/usr/share/vlc/skins2/default.vlt
+
+[alsa] # ALSA audio output
+alsa-gain=0.857375
+
+[core] # core program
+aout=alsa
+loop=1
+metadata-network-access=1

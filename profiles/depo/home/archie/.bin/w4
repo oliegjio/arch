@@ -1,0 +1,18 @@
+#!/bin/bash
+
+i3-msg "workspace 4; append_layout /home/archie/.config/i3/workspace-4.json"
+
+my_time=0.1
+
+com_1=":"
+com_2="ranger"
+com_3="calcurse"
+com_4="mocp"
+
+xterm -e "cd ~; $com_1; bash" &
+sleep $my_time
+xterm -e "cd ~; $com_2; bash" &
+sleep $my_time
+xterm -e "cd ~; $com_3; bash" &
+sleep $my_time
+xterm -e "cd ~/Music; $com_4 ~/Music; bash" &
