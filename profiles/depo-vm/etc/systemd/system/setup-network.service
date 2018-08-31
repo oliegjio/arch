@@ -1,0 +1,11 @@
+[Unit]
+Description=Set enp0s3 interface up and start dhcpcd
+After=network.target
+
+[Service]
+User=root
+Type=forking
+ExecStart=/home/archie/.bin/setup-network
+
+[Install]
+WantedBy=multi-user.target
