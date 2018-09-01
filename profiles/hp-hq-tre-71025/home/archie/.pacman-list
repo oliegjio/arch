@@ -1,3 +1,1 @@
-wavpack bdf-unifont xorg-fonts-misc xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot dunst alsa-utils vifm xorg-xprop vlc moc aria2 p7zip unrar 
-viewnior ffmpeg chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu atom cmake jupyter-notebook python-numpy python-scipy python 
-python-sympy emacs python-matplotlib tmux ranger wpa_actiond xorg-server xorg-xinit 
+wavpack bdf-unifont xorg-fonts-misc xorg-server xorg-xinit xterm i3 dmenu gvim git xclip feh xbindkeys scrot dunst alsa-utils vifm xorg-xprop vlc moc aria2 p7zip unrar viewnior ffmpeg chromium rsync bash-completion wget xorg-xrandr zathura zathura-pdf-mupdf zathura-djvu atom cmake jupyter-notebook python-numpy python-scipy python python-sympy emacs python-matplotlib tmux ranger wpa_actiond xorg-server xorg-xinit virtualbox
