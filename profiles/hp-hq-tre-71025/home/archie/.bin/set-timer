@@ -1,0 +1,3 @@
+#!/bin/bash
+
+detach set-timer-script $*
