@@ -1,9 +1,11 @@
 #!/bin/bash
 
+SINCE=$(date +'%T')
+
 sleep $(($1 * 60))
 
 if [[ $1 -eq 1 ]]; then
-    dunstify -t 0 "TIMER EXPIRED" "$1 minute passed!" -h string:bgcolor:#ff0000
+    dunstify -t 0 "TIMER EXPIRED" "$1 minute passed since $SINCE!" -h string:bgcolor:#ff0000
 else
-    dunstify -t 0 "TIMER EXPIRED" "$1 minutes passed!" -h string:bgcolor:#ff0000
+    dunstify -t 0 "TIMER EXPIRED" "$1 minutes passed $SINCE!" -h string:bgcolor:#ff0000
 fi
