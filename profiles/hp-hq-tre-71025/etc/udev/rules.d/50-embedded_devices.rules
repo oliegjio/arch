@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", ATTRS{product}== "xHCI Host Controller", GROUP="wheel", MODE="0666"
