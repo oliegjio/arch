@@ -38,7 +38,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Unifont'
 
 bindsym $mod+z exec i3lock-custom
 
-bindsym $mod+Shift+Grave move workspace to output left
+bindsym $mod+Shift+F1 move workspace to output left
+bindsym $mod+Shift+F2 move workspace to output right
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
