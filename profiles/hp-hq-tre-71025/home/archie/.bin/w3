@@ -2,7 +2,7 @@
 
 i3-msg "workspace 3; append_layout /home/archie/.config/i3/workspace-3.json"
 
-my_time=0.1
+my_time=0.2
 
 com_1=":"
 com_2=":"

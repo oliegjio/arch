@@ -7,6 +7,8 @@ set $right l
 set $mod Mod4
 
 new_window normal 1 px
+new_float normal 1
+hide_edge_borders both
 
 for_window [class="Xmessage"] floating enable
 for_window [class="Upwork"] floating enable
