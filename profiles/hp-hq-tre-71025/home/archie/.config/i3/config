@@ -7,6 +7,8 @@ set $right l
 set $mod Mod4
 
 new_window normal 1 px
+new_float normal 1
+hide_edge_borders both
 
 for_window [class="Xmessage"] floating enable
 for_window [class="Upwork"] floating enable
@@ -38,7 +40,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Unifont'
 
 bindsym $mod+z exec i3lock-custom
 
-bindsym $mod+Shift+Grave move workspace to output left
+bindsym $mod+Shift+F1 move workspace to output left
+bindsym $mod+Shift+F2 move workspace to output right
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
