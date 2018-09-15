@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix display resolution
+After=network.target
+
+[Service]
+User=archie
+Type=forking
+ExecStart=/home/archie/.bin/fix-resolution
+
+[Install]
+WantedBy=multi-user.target
