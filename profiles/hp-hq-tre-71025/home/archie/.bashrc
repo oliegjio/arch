@@ -21,3 +21,6 @@ PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:/home/archie/.bin
 export EDITOR=emp
+
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
