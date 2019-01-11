@@ -17,7 +17,7 @@ alias l="ls -1tr * | tail -1 | awk '{print \$9}'"
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:/home/archie/.bin
-export EDITOR=emp
+export EDITOR=demacs
 
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
