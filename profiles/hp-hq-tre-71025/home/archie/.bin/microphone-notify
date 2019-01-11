@@ -4,7 +4,7 @@ isMicrophoneOn="$(amixer get 'Capture',0 | grep '\[on\]')"
 
 if [ "$isMicrophoneOn" ];
 then
-    dunstify -r 1 -t 1000 "Microphone On" -h string:bgcolor:#00cc00 -h string:fgcolor:#000000
+    notify-send -t 1000 "Microphone On" -h string:bgcolor:#00cc00 -h string:fgcolor:#000000
 else
-    dunstify -r 1 -t 1000 "Microphone Off" -h string:bgcolor:#cc0000 -h string:fgcolor:#000000
+    notify-send -t 1000 "Microphone Off" -h string:bgcolor:#cc0000 -h string:fgcolor:#000000
 fi
