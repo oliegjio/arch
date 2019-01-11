@@ -1,3 +1,0 @@
-#!/bin/bash
-
-id3v2 -D *.mp3 && eyeD3 --remove-all-images * *.mp3

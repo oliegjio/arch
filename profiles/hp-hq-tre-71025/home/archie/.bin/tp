@@ -1,3 +1,0 @@
-#!/bin/bash
-
-pwd | xclip && pwd | xclip -sel clipboard
