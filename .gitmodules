@@ -7,12 +7,13 @@
 [submodule "profiles/hp-hq-tre-71025/home/archie/.emacs.d"]
 	path = profiles/hp-hq-tre-71025/home/archie/.emacs.d
 	url = https://github.com/oliegjio/emacs
-[submodule "profiles/depo-vm/home/archie/.emacs.d"]
-	path = profiles/depo-vm/home/archie/.emacs.d
-	url = https://github.com/oliegjio/emacs
+
 [submodule "profiles/depo-vm/home/archie/.config/sublime-text-3"]
 	path = profiles/depo-vm/home/archie/.config/sublime-text-3
 	url = https://github.com/oliegjio/sublime-text-3
 [submodule "profiles/depo-vm/home/archie/.atom"]
 	path = profiles/depo-vm/home/archie/.atom
 	url = https://github.com/oliegjio/atom
+[submodule "profiles/depo-vm/home/archie/.emacs.d"]
+	path = profiles/depo-vm/home/archie/.emacs.d
+	url = https://github.com/oliegjio/emacs
