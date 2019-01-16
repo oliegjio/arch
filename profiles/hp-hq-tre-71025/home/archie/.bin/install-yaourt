@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /tmp
+git clone https://aur.archlinux.org/package-query
+cd /tmp/package-query
+makepkg -sri
+
+cd /tmp
+git clone https://aur.archlinux.org/yaourt
+cd /tmp/yaourt
+makepkg -sri
+
+cd
